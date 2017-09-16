@@ -1,3 +1,5 @@
+![Prototype Kit Logo](https://raw.githubusercontent.com/welldigital/prototype-kit/master/public/images/pkit.png)
+
 # Well Digital prototype kit
 
 The prototype kit provides a simple way to make interactive prototypes that look like pages on well.co.uk. These prototypes can be used to show ideas to people you work with, and to do user research.
