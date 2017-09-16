@@ -25,7 +25,11 @@ Once the clone has finished, change into the prototype-kit directory `cd prototy
 npm install
 ```
 
-It will take a few moments but once successfully complete, that is a the prototype-kit installed onto your computer. To start the prototype-kit, now type:
+It will take a few moments but once successfully complete, that is a copy of the prototype-kit installed onto your computer.
+
+## Starting the prototype-kit
+
+To start the prototype-kit, now type:
 
 ```shell
 npm start
