@@ -1,0 +1,44 @@
+// ------------------------------------------------------
+//  Core
+// ------------------------------------------------------
+
+// Base typopgraphical styles
+$labcoat-global-font-size:    10px !default;
+$labcoat-global-line-height:  24px !default;
+
+// Brand & supporting colors
+$labcoat-colors: (
+  cerulean:         #00A9D5,
+  deep-cerulean:    #0080A4,
+  regal-blue:       #005571,
+  atlantis:         #7FBA2A,
+  green-haze:       #009A3A,
+  mountain-meadow:  #15AA99,
+  solid-black:      #000000,  
+  thunder:          #231F20,
+  boulder:          #787878,
+  flame-pea:        #E14F47,
+  neon-carrot:      #FF8D42,
+  gallery:          #EBEBEB,
+  lighter-grey:     #EFF1F2,
+  alabaster:        #FDFDFD,  
+  porcelain:        #F7F8F9,
+  solid-white:      #FFFFFF
+);
+
+// Theme colors
+$labcoat-theme-colors: (
+  heading:    cerulean,
+  link:       atlantis,
+  border:     boulder,
+  text:       thunder,
+  warning:    flame-pea
+);
+
+// Font sizes
+$labcoat-font-sizes: (
+  base:       22px,
+  small:      18px,
+  medium:     26px,
+  large:      36px
+);

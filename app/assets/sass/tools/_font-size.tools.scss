@@ -1,0 +1,19 @@
+// -------------------------------------------------------
+//  Font Sizes
+// ------------------------------------------------------
+
+@function labcoat-font-size($key) {
+  @if map-has-key($labcoat-font-sizes, $key) {
+    @return map-get($labcoat-font-sizes, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $font-sizes.";
+  @return null;
+}
+
+@mixin labcoat-font-size($font-size) {
+  $font-size: labcoat-font-size($font-size);
+  
+  font-size: $font-size;
+  font-size: ($font-size / $labcoat-global-font-size) * 1rem;
+}

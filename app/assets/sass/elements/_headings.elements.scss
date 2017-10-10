@@ -1,0 +1,28 @@
+// ------------------------------------------------------
+//  Headings
+// ------------------------------------------------------
+
+h1 {
+  @include labcoat-font-size(large);
+  //font-size: labcoat-font-size(large);  
+}
+
+h2 {
+  font-size: labcoat-font-size(medium);  
+}
+
+h3 {
+  font-size: labcoat-font-size(base);  
+}
+
+h4 {
+  font-size: labcoat-font-size(small);  
+}
+
+h5 {
+  font-size: labcoat-font-size(small);  
+}
+
+h6 {
+  font-size: labcoat-font-size(small);  
+}

@@ -1,0 +1,14 @@
+// ------------------------------------------------------
+//  Page
+// ------------------------------------------------------
+
+html {
+  font-size: 62.5%;
+  overflow-y: scroll;
+  min-height: 100%;
+}
+
+body {
+  color: labcoat-theme-color(text);
+  font-size: labcoat-font-size(base);
+}
