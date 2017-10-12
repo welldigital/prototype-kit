@@ -2,10 +2,6 @@
 //  Clearfix
 // ------------------------------------------------------
 
-// .usage {
-//   @include inuit-clearfix();
-// }
-
 @mixin labcoat-clearfix() {
   
   &:after {
