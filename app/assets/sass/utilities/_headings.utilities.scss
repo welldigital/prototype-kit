@@ -3,25 +3,25 @@
 // ------------------------------------------------------
 
 .u-h1 {
-  font-size: labcoat-font-size(large);  
+  @include labcoat-font-size(large);  
 }
 
 .u-h2 {
-  font-size: labcoat-font-size(medium);  
+  @include labcoat-font-size(medium);  
 }
 
 .u-h3 {
-  font-size: labcoat-font-size(base);  
+  @include labcoat-font-size(base);  
 }
 
 .u-h4 {
-  font-size: labcoat-font-size(small);  
+  @include labcoat-font-size(small);  
 }
 
 .u-h5 {
-  font-size: labcoat-font-size(small);  
+  @include labcoat-font-size(small);  
 }
 
 .u-h6 {
-  font-size: labcoat-font-size(small);  
+  @include labcoat-font-size(small);  
 }

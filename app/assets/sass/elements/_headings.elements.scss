@@ -7,21 +7,21 @@ h1 {
 }
 
 h2 {
-  font-size: labcoat-font-size(medium);  
+  @include labcoat-font-size(medium);  
 }
 
 h3 {
-  font-size: labcoat-font-size(base);  
+  @include labcoat-font-size(base);  
 }
 
 h4 {
-  font-size: labcoat-font-size(small);  
+  @include labcoat-font-size(small);  
 }
 
 h5 {
-  font-size: labcoat-font-size(small);  
+  @include labcoat-font-size(small);  
 }
 
 h6 {
-  font-size: labcoat-font-size(small);  
+  @include labcoat-font-size(small);  
 }
