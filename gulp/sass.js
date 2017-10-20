@@ -1,7 +1,7 @@
 /*
   sass.js
   ===========
-  compiles sass from assets folder with the govuk_modules
+  compiles sass from assets folder with the well_modules
   also includes sourcemaps
 */
 
