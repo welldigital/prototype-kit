@@ -9,6 +9,7 @@ html {
 }
 
 body {
-  color: labcoat-theme-color(text);
-  font-size: labcoat-font-size(base);
+  color: labcoat-theme-color(default-text);
+  @include labcoat-font-family(base);
+  @include labcoat-font-size(base);
 }

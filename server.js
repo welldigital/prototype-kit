@@ -208,7 +208,11 @@ utils.findAvailablePort(app, function (port) {
         proxy: 'localhost:' + (port - 50),
         port: port,
         ui: false,
-        files: ['public/**/*.*', 'app/views/**/*.*'],
+        files: [
+          'public/**/*.*',
+          'app/views/**/*.*',
+          'lib/**/*.html'
+        ],
         ghostmode: false,
         open: false,
         notify: false,

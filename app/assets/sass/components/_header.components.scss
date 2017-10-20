@@ -1,0 +1,28 @@
+// ------------------------------------------------------
+//  Header
+// ------------------------------------------------------
+
+.c-header {
+  background-color: labcoat-theme-color(header-bg);
+  border-bottom: 2px solid labcoat-theme-color(header-border);
+  padding: 19px 0; // 80px height
+  @include labcoat-clearfix();  
+}
+
+.c-header__logo-link {
+  float: left;  
+  height: 40px;
+  width: 95px;
+}
+
+.c-header__logo {
+  display: block;
+  background-image: url(../images/well-pharmacy-logo.png);
+  background-image: url(../images/well-pharmacy-logo.svg), none;
+  background-repeat: no-repeat;
+  background-size: 95px 40px;
+  height: 100%;
+  width: 100%;
+  text-indent: -9999px;  
+}
+

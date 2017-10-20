@@ -1,0 +1,24 @@
+// ------------------------------------------------------
+//  Footer
+// ------------------------------------------------------
+
+.c-footer {
+  background-color: labcoat-theme-color(footer-bg);
+  border-top: 2px solid labcoat-theme-color(footer-border);
+  clear: both;
+  padding: 32px 0; // 40px total
+  @include labcoat-font-size(small);
+}
+  
+.c-footer__copyright {
+  color: labcoat-theme-color(footer-text);
+  margin-top: 45px; // 60px total
+}
+
+.c-footer__link {
+  color: labcoat-theme-color(footer-link);
+  margin-right: 40px;
+  &:hover {
+    color: labcoat-theme-color(footer-link-hover);
+  }
+}

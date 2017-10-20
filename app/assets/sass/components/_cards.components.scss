@@ -1,0 +1,27 @@
+// ------------------------------------------------------
+//  Cards
+// ------------------------------------------------------
+
+.c-card {
+  background-color: labcoat-theme-color(card-bg);
+  display: block;
+  width: 100%;
+}
+
+.c-card__body {
+  padding: 60px; // 60px total
+}
+
+.c-card__subtitle {
+  margin-bottom: 30px; // 35px total
+  @include labcoat-font-family(medium);
+  @include labcoat-font-size(small);  
+}
+.c-card__title {
+  color: labcoat-theme-color(card-title);
+  margin-bottom: 35px; // 45px total
+}
+
+.c-card__content {
+  margin-bottom: 54px; // 60px total
+}

@@ -2,6 +2,16 @@
 //  Headings
 // ------------------------------------------------------
 
+.u-h1,
+.u-h2,
+.u-h3,
+.u-h4,
+.u-h5,
+.u-h6 {
+  margin: 0;
+  @include labcoat-font-family(medium);  
+}
+
 .u-h1 {
   @include labcoat-font-size(large);  
 }

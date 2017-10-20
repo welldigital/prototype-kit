@@ -1,0 +1,22 @@
+// ------------------------------------------------------
+//  Alerts
+// ------------------------------------------------------
+
+.c-alert {
+  background-color: labcoat-theme-color(alert-bg);
+  border-left: 5px solid labcoat-theme-color(state-default);
+  padding: 10px 20px;
+  @include labcoat-font-family(medium);  
+}
+
+.c-alert--danger {
+  border-color: labcoat-theme-color(state-danger);
+}
+
+.c-alert--success {
+  border-color: labcoat-theme-color(state-success);
+}
+
+.c-alert--warning {
+  border-color: labcoat-theme-color(state-warning);
+}

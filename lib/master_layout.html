@@ -7,21 +7,580 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/public/stylesheets/application.css">
+        <script>
+          // Picture element HTML5 shiv
+          document.createElement( "picture" );
+        </script>
+        <script src="/public/javascripts/picturefill.js" async></script>
     </head>
     <body>
+      
+      <header class="c-header" role="banner">
+        <div class="o-contain">      
+
+          <a class="c-header__logo-link" href="#" title="Well homepage" rel="home">
+            <span class="c-header__logo">Well</span>
+          </a>
+
+        </div><!-- /.o-contain -->
+      </header><!-- /.c-header -->
 
       {% block below_all %}
 
-        <h1>h1. Labcoat heading</h1>
-        <h2>h2. Labcoat heading</h2>
-        <h3>h3. Labcoat heading</h3>
-        <h4>h4. Labcoat heading</h4>
-        <h5>h5. Labcoat heading</h5>
-        <h6>h6. Labcoat heading</h6>
+        <div class="o-contain">
 
-        <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. Saepe, obcaecati sit ratione ipsa expedita incidunt tempora! Rerum aspernatur, ipsa, consequatur, doloremque molestiae eaque fugiat deleniti ullam deserunt ratione voluptatem quod?</p>
+          <div class="docs">
+
+            <h1 class="docs__title">Prototyping Kit</h1>
+
+            <ul class="docs__toc">
+              <li><a href="#headings">Headings</a></li>
+              <li><a href="#body-text">Body text</a></li>
+              <li><a href="#lead">Lead text</a></li>
+              <li><a href="#ordered-lists">Ordered lists</a></li>              
+              <li><a href="#unordered-lists">Unordered lists</a></li>      
+              <li><a href="#buttons">Buttons</a></li>
+              <li><a href="#alerts">Alerts</a></li>
+              <li><a href="#forms">Forms</a></li>
+              <li><a href="#tables">Tables</a></li>
+              <li><a href="#banners">Banners</a></li>
+              <li><a href="#images">Responsive Images</a></li>
+              <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+              <li><a href="#cards">Cards</a></li>
+              <li><a href="#media">Media</a></li>
+            </ul>
+
+            <div class="docs__section">
+
+              <h2 id="headings" class="docs__heading">Headings</h2>
+
+              <div class="docs__example">
+
+                <h1>h1. Labcoat heading</h1>
+                <h2>h2. Labcoat heading</h2>
+                <h3>h3. Labcoat heading</h3>
+                <h4>h4. Labcoat heading</h4>
+                <h5>h5. Labcoat heading</h5>
+                <h6>h6. Labcoat heading</h6>
+
+              </div><!-- /.docs__example -->
+
+            </div><!-- /.docs__section -->
+
+            <div class="docs__section">                  
+            
+              <h2 id="body-text" class="docs__heading">Body text</h2>
+
+              <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. Saepe, obcaecati sit ratione ipsa expedita incidunt tempora! Rerum aspernatur, ipsa, consequatur, doloremque molestiae eaque fugiat deleniti ullam deserunt ratione voluptatem quod?</p>
+
+            </div><!-- /.docs__section -->
+
+            <div class="docs__section">                  
+                
+              <h2 id="lead" class="docs__heading">Lead text</h2>
+
+              <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+
+            </div><!-- /.docs__section -->            
+
+            <div class="docs__section">                  
+              
+              <h2 id="ordered-lists" class="docs__heading">Ordered lists</h2>   
+              
+              <ol>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ol>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                    <li>Vestibulum laoreet porttitor sem</li>
+                    <li>Ac tristique libero volutpat at</li>
+                  </ol>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+              </ol>              
+
+            </div><!-- /.docs__section -->
+
+            <div class="docs__section">                  
+            
+              <h2 id="unordered-lists" class="docs__heading">Unordered lists</h2>          
+
+              <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                    <li>Vestibulum laoreet porttitor sem</li>
+                    <li>Ac tristique libero volutpat at</li>
+                  </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+              </ul>
+              
+            </div><!-- /.docs__section -->
+
+            <div class="docs__section">                  
+                
+              <h2 id="buttons" class="docs__heading">Buttons</h2>
+
+              <h3 class="docs__sub-heading">Default buttons</h3>
+
+              <button class="c-btn" type="button">Button button</button>
+              <a class="c-btn" href="#" role="button">Link button</a>
+
+              <h3 class="docs__sub-heading">Default buttons with an arrow</h3>
+
+              <button class="c-btn c-btn--arrow" type="button">Button button</button>
+              <a class="c-btn c-btn--arrow" href="#" role="button">Link button</a>
+
+              <h3 class="docs__sub-heading">Block level buttons</h3>              
+
+              <button class="c-btn c-btn--block" type="button">Button button</button>
+              <a class="c-btn c-btn--block" href="#" role="button">Link button</a>
+
+              <h3 class="docs__sub-heading">Block level buttons with an arrow</h3>              
+
+              <button class="c-btn c-btn--arrow c-btn--block" type="button">Button button</button>
+              <a class="c-btn c-btn--arrow c-btn--block" href="#" role="button">Link button</a>          
+              
+              <h3 class="docs__sub-heading">Disabled buttons</h3>
+
+              <button class="c-btn" type="button" disabled="disabled">Button button</button>
+              <a class="c-btn c-btn--disabled" href="#" role="button" aria-disabled="true">Link button</a>
+              <button class="c-btn c-btn--arrow" type="button" disabled="disabled">Button button</button>
+              <a class="c-btn c-btn--arrow c-btn--disabled" href="#" role="button" aria-disabled="true">Link button</a>              
+              
+              <h3 class="docs__sub-heading">Block level buttons with an arrow</h3>              
+              
+              <button class="c-btn c-btn--arrow c-btn--block" type="button" disabled="disabled">Button button</button>
+              <a class="c-btn c-btn--arrow c-btn--block c-btn--disabled" href="#" role="button" aria-disabled="true">Link button</a>              
+
+            </div><!-- /.docs__section -->        
+            
+            <div class="docs__section">
+              
+              <h2 id="alerts" class="docs__heading">Alerts</h2>
+
+              <div class="c-alert">
+                This is an example of an alert.
+              </div>
+
+              <div class="c-alert c-alert--success">
+                This is an example of a success alert.
+              </div>
+              
+              <div class="c-alert c-alert--danger">
+                This is an example of a danger alert.
+              </div> 
+
+              <div class="c-alert c-alert--warning">
+                This is an example of a warning alert.
+              </div>              
+              
+            </div><!-- /.docs__section -->
+
+            <div class="docs__section">                  
+                
+              <h2 id="forms" class="docs__heading">Forms</h2>
+
+              <form class="o-form">
+                <div class="o-form__group">
+                  <label class="o-form__label" for="exampleFormControlEmail">Example email input</label>
+                  <input type="email" class="o-form__control" id="exampleFormControlEmail" placeholder="name@example.com">
+                </div>                                      
+                <div class="o-form__group">
+                  <label class="o-form__label" for="exampleFormControlSelect">Example select</label>
+                  <div class="o-form__select">
+                    <select name="region" id="exampleFormControlSelect">
+                      <option selected="selected" disabled="disabled">Select&hellip;</option>
+                      <option value="England">England</option>
+                      <option value="England">Scotland</option>
+                      <option value="England">Wales</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="o-form__group">
+                  <label class="o-form__label" for="exampleFormControlTextarea">Example textarea</label>
+                  <textarea class="o-form__control o-form__control--textarea" name="exampleFormControlTextarea"></textarea>
+                </div>
+                <div class="o-form__group">
+                  <label class="o-form__label" for="exampleFormControlDisabled">Example disabled input</label>
+                  <input type="email" class="o-form__control" id="exampleFormControlDisabled" placeholder="name@example.com" disabled="disabled">
+                </div> 
+                <div class="o-form__group">
+                  <label class="o-form__label" for="exampleFormControlFeedback">Example input feedback</label>
+                  <input type="email" class="o-form__control" id="exampleFormControlFeedback" placeholder="name@example.com">
+                  <div class="o-form__feedback">
+                    Your data is private. <a href="#">Learn more</a>
+                  </div>
+                </div>
+                <div class="o-form__group o-form__group--error">
+                  <label class="o-form__label" for="exampleFormControlError">Example input error</label>
+                  <input type="email" class="o-form__control" id="exampleFormControlError" placeholder="name@example.com">
+                  <div class="o-form__feedback">
+                    Please provide a valid email address.
+                  </div>
+                </div>
+                <div class="o-form__group o-form__group--success">
+                  <label class="o-form__label" for="exampleFormControlSuccess">Example input success</label>
+                  <input type="email" class="o-form__control" id="exampleFormControlSuccess" placeholder="name@example.com">
+                </div>                                                  
+                <div class="o-form__group o-form__group--ar">
+                  <button class="c-btn c-btn--arrow" type="button">Submit</button>                
+                </div>
+              </form>
+
+            </div><!-- /.docs__section -->
+
+            <div class="docs__section">                  
+              
+              <h2 id="tables" class="docs__heading">Tables</h2>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Slack Username</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Dan</td>
+                    <td>Sheldon</td>
+                    <td>@sheldonline</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Paul</td>
+                    <td>Smith</td>
+                    <td>@paulsmith</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Jennifer</td>
+                    <td>Pye</td>
+                    <td>@jen</td>
+                  </tr>                  
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Hinrich</td>
+                    <td>von Haaren</td>
+                    <td>@hinrich</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Adam</td>
+                    <td>Hathcock</td>
+                    <td>@adam</td>
+                  </tr>                  
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Charlie</td>
+                    <td>Meachin</td>
+                    <td>@cg-charlie</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Lisa</td>
+                    <td>Barron</td>
+                    <td>@cg-lisa</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>Andy</td>
+                    <td>Mallalieu</td>
+                    <td>@ninesixty-andy</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>Mark</td>
+                    <td>Bebbington</td>
+                    <td>@ninesixty-mark</td>
+                  </tr>                                                                        
+                </tbody>
+              </table>
+
+            </div><!-- /.docs__section -->            
+
+            <div class="docs__section">                  
+              
+              <h2 id="banners" class="docs__heading">Banners</h2>
+
+              <div class="c-banner ">
+                <span class="c-banner__badge">New</span>
+                <span class="c-banner__msg">This is an example of a <a href="#">banner</a>.</span>
+              </div>
+
+              <div class="c-banner c-banner--success">
+                <span class="c-banner__badge">Success</span>
+                <span class="c-banner__msg">This is an example of a success banner.</span>
+              </div>
+              
+              <div class="c-banner c-banner--danger">
+                <span class="c-banner__badge">Danger</span>
+                <span class="c-banner__msg">This is an example of a danger banner.</span>
+              </div>              
+
+              <div class="c-banner c-banner--warning">
+                <span class="c-banner__badge">Warning</span>
+                <span class="c-banner__msg">This is an example of a warning banner.</span>
+              </div>  
+
+            </div><!-- /.docs__section -->            
+            
+            <div class="docs__section">                  
+              
+              <h2 id="images" class="docs__heading">Responsive Images</h2>
+
+              <div class="docs__example">
+
+                <picture>
+                  <source srcset="/public/images/placeholder-xxl.jpg" media="(min-width: 1300px)">                
+                  <source srcset="/public/images/placeholder-xl.jpg, /public/images/placeholder-xxl.jpg 2x" media="(min-width: 980px)">
+                  <source srcset="/public/images/placeholder-large.jpg, /public/images/placeholder-xl.jpg 2x" media="(min-width: 740px)">
+                  <img class="c-img" srcset="/public/images/placeholder-small.jpg, /public/images/placeholder-medium.jpg 2x" alt="Image with picture element">
+                </picture>
+
+                <p class="lead">Table of breakpoint sizes to help determine dimensions for image crops.</p>
+                <p>This will need to be revisited when the grid system and horizontal padding units have been confirmed, so we can decide on some sensible crop sizes that satisfy most images at various breakpoints and screen resolutions.</p>
+
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Image Type</th>
+                      <th>Small</th>
+                      <th>Medium</th>
+                      <th>Large</th>
+                      <th>Extra Large</th>
+                      <th>Max. Container</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Full Width</th>
+                      <td>320px</td>
+                      <td>740px</td>
+                      <td>980px</td>
+                      <td>1300px</td>
+                      <td>1800px</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Full Width @2x</th>
+                      <td>640px</td>
+                      <td>1480px</td>
+                      <td>1960px</td>
+                      <td>2600px</td>
+                      <td>3600px</td>
+                    </tr>                  
+                    <tr>
+                      <th scope="row">Half Width</th>
+                      <td>320px</td>
+                      <td>740px</td>
+                      <td>490px</td>
+                      <td>650px</td>
+                      <td>900px</td>
+                    </tr> 
+                    <tr>
+                      <th scope="row">Half Width @2x</th>
+                      <td>640px</td>
+                      <td>1480px</td>
+                      <td>980px</td>
+                      <td>1300px</td>
+                      <td>1800px</td>
+                    </tr>                                    
+                  </tbody>
+                </table>              
+
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Crop</th>
+                      <th>Size</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>placeholder-small.jpg</td>
+                      <td>320px</td>
+                    </tr>
+                    <tr>
+                      <td>placeholder-medium.jpg</td>
+                      <td>740px</td>
+                    </tr>
+                    <tr>
+                      <td>placeholder-large.jpg</td>
+                      <td>980px</td>
+                    </tr>
+                    <tr>
+                      <td>placeholder-xl.jpg</td>
+                      <td>1300px</td>
+                    </tr>
+                    <tr>
+                      <td>placeholder-xxl.jpg</td>
+                      <td>1800px</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div><!-- /.docs__example -->
+
+            </div><!-- /.docs__section --> 
+
+            <div class="docs__section">                  
+              
+              <h2 id="breadcrumbs" class="docs__heading">Breadcrumbs</h2>
+
+              <div class="c-breadcrumb">
+                <a class="c-breadcrumb__link" href="#">Home</a>
+                <div class="c-breadcrumb__divider"> / </div>
+                <a class="c-breadcrumb__link" href="#">Prescriptions</a>
+                <div class="c-breadcrumb__divider"> / </div>
+                <div class="c-breadcrumb__section">Repeat Prescriptions</div>
+              </div>
+
+            </div><!-- /.docs__section -->  
+            
+            <div class="docs__section">                  
+              
+              <h2 id="cards" class="docs__heading">Cards</h2>
+
+              <div class="c-card">
+                <div class="c-card__body">
+                  <div class="c-card__subtitle">Home delivery</div>
+                  <h2 class="c-card__title">Prescriptions delivered to your home</h2>
+                  <div class="c-card__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor dictum velit, sed pretium libero tempor ac.</p>
+                  </div>
+                  <a class="c-btn" href="#">Find out more</a>
+                </div>
+              </div>
+
+              <ul class="c-card-list">
+                <li class="c-card-list__item">
+                  <div class="c-card">
+                    <div class="c-card__body">
+                      <div class="c-card__subtitle">Home delivery</div>
+                      <h2 class="c-card__title">Prescriptions delivered to your home</h2>
+                      <div class="c-card__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor dictum velit, sed pretium libero tempor ac.</p>
+                      </div>
+                      <div class="c-card__btn">
+                        <a class="c-btn" href="#">Find out more</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="c-card-list__item">
+                  <div class="c-card">
+                    <div class="c-card__body">
+                      <div class="c-card__subtitle">Pharmacist Consultation</div>
+                      <h2 class="c-card__title">Worried about your medication?</h2>
+                      <div class="c-card__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor dictum velit, sed pretium libero tempor ac.</p>
+                      </div>
+                      <div class="c-card__btn">
+                        <a class="c-btn" href="#">Find out more</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="c-card-list__item">
+                  <div class="c-card">
+                    <div class="c-card__body">
+                      <div class="c-card__subtitle">Home delivery</div>
+                      <h2 class="c-card__title">Prescriptions delivered to your home</h2>
+                      <div class="c-card__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor dictum velit, sed pretium libero tempor ac.</p>
+                      </div>
+                      <div class="c-card__btn">
+                          <a class="c-btn" href="#">Find out more</a>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="c-card-list__item">
+                  <div class="c-card">
+                    <div class="c-card__body">
+                      <div class="c-card__subtitle">Pharmacist Consultation</div>
+                      <h2 class="c-card__title">Worried about your medication?</h2>
+                      <div class="c-card__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor dictum velit, sed pretium libero tempor ac.</p>
+                      </div>
+                      <div class="c-card__btn">
+                        <a class="c-btn" href="#">Find out more</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>                                                              
+
+            </div><!-- /.docs__section -->              
+            
+            <div class="docs__section">                  
+              
+              <h2 id="media" class="docs__heading">Media</h2>
+
+              <div class="c-media">
+                <div class="c-media__img">
+
+                  <picture>
+                    <source srcset="/public/images/placeholder-xxl.jpg" media="(min-width: 1300px)">                
+                    <source srcset="/public/images/placeholder-xl.jpg, /public/images/placeholder-xxl.jpg 2x" media="(min-width: 980px)">
+                    <source srcset="/public/images/placeholder-large.jpg, /public/images/placeholder-xl.jpg 2x" media="(min-width: 740px)">
+                    <img class="c-img" srcset="/public/images/placeholder-small.jpg, /public/images/placeholder-medium.jpg 2x" alt="Image with picture element">
+                  </picture>
+
+                </div>
+                <div class="c-media__body">
+
+                  <div class="c-card">
+                    <div class="c-card__body">
+                      <h2 class="c-card__title">Nominate your local Well Pharmacy</h2>
+                      <div class="c-card__content">
+                        <p>We have over 780 pharmacies in the UK to choose from.</p>
+                      </div>
+                      <div class="c-card__btn">
+                        <a class="c-btn" href="#">Find out more</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div><!-- /.docs__section -->
+
+          </div><!-- /.docs -->
+
+        </div><!-- /.o-wrap -->
 
       {% endblock %}      
 
-    </body>
+    <footer class="c-footer">
+      <div class="o-contain">
+                      
+        <a class="c-footer__link" href="#">About</a>
+        <a class="c-footer__link" href="#">Contact</a>
+        <a class="c-footer__link" href="#">Policies</a>
+        <a class="c-footer__link" href="#">News</a>
+        <a class="c-footer__link" href="#">Careers</a>
+        <a class="c-footer__link" href="#">Well Careplus</a>
+      
+        <div class="c-footer__copyright">
+          Copyright &copy; Bestway (Holdings) Ltd 2017. All rights reserved.
+        </div>
+
+      </div><!-- /.o-contain -->
+    </footer><!-- /.c-footer -->
+
+  </body>
 </html>

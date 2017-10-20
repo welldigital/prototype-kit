@@ -1,0 +1,53 @@
+// ------------------------------------------------------
+//  Banners
+// ------------------------------------------------------
+
+.c-banner {
+  background-color: labcoat-theme-color(banner-bg);
+  padding: 15px 20px;
+  position: relative;
+  @include labcoat-font-family(medium);
+  @include mq($from: large) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }  
+}
+
+.c-banner__badge {
+  background-color: labcoat-theme-color(state-default);
+  color: labcoat-theme-color(banner-badge-color);
+  display: inline-block;
+  letter-spacing: 3px;
+  min-height: 50px;
+  padding: 11px 12px 11px 15px; // Reduce left padding to account for letter-spacing
+  position: relative;
+  margin-right: 15px;
+  text-transform: uppercase;
+  @include labcoat-font-size(small);   
+}
+  
+.c-banner__msg {
+  display: inline-block;
+  margin-top: 15px; // 20px total
+  @include mq($from: large) {
+    margin-top: 0;
+  }     
+}
+  
+.c-banner--danger {
+  .c-banner__badge {
+    background-color: labcoat-theme-color(state-danger);
+  }
+}
+
+.c-banner--success {
+  .c-banner__badge {
+    background-color: labcoat-theme-color(state-success);
+  }
+}
+
+.c-banner--warning {
+  .c-banner__badge {
+    background-color: labcoat-theme-color(state-warning);
+  }
+}

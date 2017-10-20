@@ -2,9 +2,14 @@
 //  Core
 // ------------------------------------------------------
 
-// Base typopgraphical styles
-$labcoat-global-font-size:    10px !default;
-$labcoat-global-line-height:  24px !default;
+$labcoat-is-ie: false !default;
+
+// Global settings
+$labcoat-global-font-family-regular:  "TheinhardtRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$labcoat-global-font-family-medium:   "TheinhardtMedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$labcoat-global-font-size:            10px !default;
+$labcoat-global-input-height:         50px;
+$labcoat-global-transition:           all 300ms ease-in-out !default;
 
 // Brand & supporting colors
 $labcoat-colors: (
@@ -17,6 +22,7 @@ $labcoat-colors: (
   solid-black:      #000000,  
   thunder:          #231F20,
   boulder:          #787878,
+  iron:             #DCDDDE,
   flame-pea:        #E14F47,
   neon-carrot:      #FF8D42,
   gallery:          #EBEBEB,
@@ -28,17 +34,80 @@ $labcoat-colors: (
 
 // Theme colors
 $labcoat-theme-colors: (
-  heading:    cerulean,
-  link:       atlantis,
-  border:     boulder,
-  text:       thunder,
-  warning:    flame-pea
+  alert-bg:                 lighter-grey,
+  banner-bg:                lighter-grey,
+  banner-badge-color:       solid-white,
+  breadcrumb-divider:       iron,
+  breadcrumb-link:          thunder,
+  breadcrumb-link-hover:    cerulean,
+  card-bg:                  lighter-grey,
+  card-title:               cerulean,
+  default-border:           iron,
+  default-link:             cerulean,
+  default-link-hover:       atlantis,
+  default-text:             thunder,
+  footer-bg:                porcelain,
+  footer-border:            lighter-grey,
+  footer-link:              thunder,
+  footer-link-hover:        cerulean,
+  footer-text:              boulder,
+  header-bg:                porcelain,
+  header-border:            lighter-grey,
+  input-bg:                 solid-white,
+  input-border:             thunder,
+  input-disabled:           iron,
+  input-placeholder:        cerulean,
+  media-bg:                 lighter-grey,
+  state-default:            cerulean,
+  state-success:            atlantis,  
+  state-danger:             flame-pea,
+  state-warning:            neon-carrot
+);
+
+// Font families
+$labcoat-font-families: (
+  base:             $labcoat-global-font-family-regular,
+  medium:           $labcoat-global-font-family-medium
+);
+
+// Font weights
+$labcoat-font-weights: (
+  base:             400,
+  medium:           500
 );
 
 // Font sizes
 $labcoat-font-sizes: (
-  base:       22px,
-  small:      18px,
-  medium:     26px,
-  large:      36px
+  base:             22px,
+  small:            18px,
+  medium:           26px,
+  large:            40px
+);
+
+// Line heights
+$labcoat-font-leading: (
+  base:             1.36,   // 30px / 22px = 1.36
+  small:            1.66,   // 30px / 18px = 1.66
+  medium:           1.3,    // 34px / 26px = 1.3
+  large:            1.3    // 52px / 40px = 1.3
+);
+
+// Buttons
+$labcoat-buttons: (
+  default: (
+    bg-color:             cerulean, 
+    border-color:         cerulean, 
+    color:                solid-white, 
+    hover-bg-color:       deep-cerulean, 
+    hover-border-color:   deep-cerulean, 
+    hover-color:          solid-white
+  ),
+  disabled: (
+    bg-color:             iron, 
+    border-color:         iron, 
+    color:                solid-white, 
+    hover-bg-color:       iron, 
+    hover-border-color:   iron, 
+    hover-color:          solid-white
+  )
 );

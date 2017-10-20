@@ -1,0 +1,14 @@
+$mq-breakpoints: (
+	small:			320px,
+	medium:			740px,
+	large:			980px,
+	xlarge:			1300px
+);
+
+$labcoat-use-markup-fix: false !default;
+
+$labcoat-spacing-unit: 1rem;
+$labcoat-spacing-unit-tiny: floor($labcoat-spacing-unit/4);
+$labcoat-spacing-unit-small: floor($labcoat-spacing-unit/2);
+$labcoat-spacing-unit-large: floor($labcoat-spacing-unit*1.5);
+$labcoat-spacing-unit-huge: floor($labcoat-spacing-unit*2.5);

@@ -1,0 +1,86 @@
+// ------------------------------------------------------
+//  Docs
+// ------------------------------------------------------
+
+.docs {
+  padding: 60px 0;
+}
+
+.docs__title {
+  margin-bottom: 42px; // 60px total
+}
+
+.docs__section {
+  border-top: 1px solid labcoat-theme-color(default-border);
+  padding-top: 72px; // 80px total
+  padding-bottom: 80px;
+}
+
+.docs__heading {
+  margin-bottom: 60px; // 80px total
+  @include labcoat-font-size(large);
+}
+
+.docs__sub-heading {
+  margin-bottom: 20px;
+}
+
+.docs__toc {
+  margin-bottom: 75px; // 80px total
+}
+
+.docs__example {
+  margin-bottom: 40px;
+}
+
+.docs {
+
+  // Headings
+  .docs__example {
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 20px;
+    }
+  }
+
+  // Alerts
+  .c-alert {
+    margin-bottom: 40px;
+  }
+
+  // Banners
+  .c-banner {
+    margin-bottom: 40px;
+  }
+
+  // Buttons
+  .c-btn {
+    margin-bottom: 20px;
+  }
+  .c-btn + h3 {
+    margin-top: 40px;
+  }
+
+  // Images
+  .c-img {
+    margin-bottom: 80px;
+  }
+
+  p + table {
+    margin-top: 80px;
+  }
+
+  table + table {
+    margin-top: 80px;
+  }
+
+  // Cards
+  .c-card .c-btn {
+    margin-bottom: 0;
+  }
+
+  // Card list
+  .c-card + .c-card-list {
+    margin-top: 80px;
+  }
+
+}

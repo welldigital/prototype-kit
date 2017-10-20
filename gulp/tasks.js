@@ -4,30 +4,47 @@
   defaults wraps generate-assets, watch and server
 */
 
-var gulp = require('gulp')
-var mocha = require('gulp-mocha')
-var runSequence = require('run-sequence')
+const gulp = require('gulp')
+const mocha = require('gulp-mocha')
+const runSequence = require('run-sequence')
 
 gulp.task('default', function (done) {
-  runSequence('generate-assets',
-                'watch',
-                'server', done)
+  runSequence(
+    'generate-assets',
+    'watch',
+    'server', 
+    done
+  )
 })
 
 gulp.task('generate-assets', function (done) {
-  runSequence('clean',
-                'sass',
-                'copy-assets', done)
+  runSequence(
+    'clean',
+    'copy-well-modules',
+    'sass',
+    'copy-assets', 
+    done
+  )
 })
 
+gulp.task('copy-well-modules', [
+  'copy-sass-mq',
+  'copy-normalize-scss'
+]);
+
 gulp.task('watch', function (done) {
-  runSequence('watch-sass',
-               'watch-assets', done)
+  runSequence(
+    'watch-sass',
+    'watch-assets', 
+    done
+  )
 })
 
 gulp.task('test', function () {
-  runSequence('generate-assets',
-              'mocha')
+  runSequence(
+    'generate-assets',
+    'mocha'
+  )
 })
 
 gulp.task('mocha', function () {

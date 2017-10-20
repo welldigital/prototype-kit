@@ -3,5 +3,5 @@
 // ------------------------------------------------------
 
 a {
-  color: labcoat-theme-color(link);
+  @include labcoat-link-underline();
 }

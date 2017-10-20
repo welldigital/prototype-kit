@@ -1,0 +1,29 @@
+// -------------------------------------------------------
+//  Font families
+// ------------------------------------------------------
+
+@function labcoat-font-family($key) {
+  @if map-has-key($labcoat-font-families, $key) {
+    @return map-get($labcoat-font-families, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $labcoat-font-families.";
+  @return null;
+}
+
+@function labcoat-font-weight($key) {
+  @if map-has-key($labcoat-font-weights, $key) {
+    @return map-get($labcoat-font-weights, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $labcoat-font-weights.";
+  @return null;
+}
+
+@mixin labcoat-font-family($key) {
+  $font-family: labcoat-font-family($key);
+  $font-weight: labcoat-font-weight($key);
+  
+  font-family: $font-family;
+  font-weight: $font-weight;
+}

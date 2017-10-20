@@ -1,0 +1,26 @@
+// ------------------------------------------------------
+//  Buttons
+// ------------------------------------------------------
+
+@function labcoat-button($key, $property) {
+  @if map-has-key($labcoat-buttons, $key) {
+    $button-property-map: map-get($labcoat-buttons, $key);    
+    @return map-get($labcoat-colors, map-get($button-property-map, $property));    
+  }
+
+  @warn "Unknown `#{$key}` in $labcoat-buttons.";
+  @return null;
+}
+
+@mixin labcoat-button($key) {
+  background-color: labcoat-button($key, bg-color);
+  border-color: labcoat-button($key, border-color);  
+  color: labcoat-button($key, color);
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: labcoat-button($key, hover-bg-color);
+    border-color: labcoat-button($key, hover-border-color);  
+    color: labcoat-button($key, hover-color);    
+  }
+}

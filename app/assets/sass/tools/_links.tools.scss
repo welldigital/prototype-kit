@@ -1,0 +1,25 @@
+// ------------------------------------------------------
+//  Links
+// ------------------------------------------------------
+
+@mixin labcoat-link-underline($color: false, $hover-color: false) {
+  
+  @if $color == false {
+    $color: labcoat-theme-color(default-link);
+  } @else {
+    $color: labcoat-theme-color($color);
+  }
+
+  @if $hover-color == false {
+    $hover-color: labcoat-theme-color(default-link-hover);
+  } @else {
+    $hover-color: labcoat-theme-color($hover-color);
+  }
+
+  color: $color;
+  transition: $labcoat-global-transition;
+  &:hover {
+    color: $hover-color;
+  }
+
+}

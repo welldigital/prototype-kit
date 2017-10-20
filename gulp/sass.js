@@ -5,15 +5,21 @@
   also includes sourcemaps
 */
 
-var gulp = require('gulp')
-var sass = require('gulp-sass')
-var sourcemaps = require('gulp-sourcemaps')
-var config = require('./config.json')
+const gulp = require('gulp')
+const sass = require('gulp-sass')
+const sourcemaps = require('gulp-sourcemaps')
+const config = require('./config.json')
+const wellModules = config.paths.wellModules
 
 gulp.task('sass', function () {
-  return gulp.src(config.paths.assets + '/sass/*.scss')
+  return gulp.src(`${config.paths.assets}/sass/*.scss`)
   .pipe(sourcemaps.init())
-  .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+  .pipe(sass({outputStyle: 'expanded',
+    includePaths: [
+      `${wellModules}sass-mq/`,
+      `${wellModules}normalize-scss/sass/`
+    ]
+  }).on('error', sass.logError))
   .pipe(sourcemaps.write())
-  .pipe(gulp.dest(config.paths.public + '/stylesheets/'))
+  .pipe(gulp.dest(`${config.paths.public}/stylesheets/`))
 })

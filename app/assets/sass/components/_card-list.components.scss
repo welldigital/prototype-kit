@@ -1,0 +1,48 @@
+// ------------------------------------------------------
+//  Card list
+// ------------------------------------------------------
+
+.c-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  @include mq($from: large) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }  
+}
+
+.c-card-list__item {
+  display: flex;
+  margin-bottom: 30px;
+  width: 100%;
+  @include mq($from: large) {
+    width: 50%;
+  }      
+}
+
+.c-card-list {
+  .c-card {
+    display: flex;
+    flex-direction: column;
+    @include mq($from: large) {
+      margin-left: 15px;
+      margin-right: 15px;
+    }     
+  }
+  .c-card__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+  }
+  .c-card__content {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    p {
+      flex: 1 0 auto;
+    }
+  }
+}

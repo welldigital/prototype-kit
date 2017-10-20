@@ -1,0 +1,44 @@
+// ------------------------------------------------------
+//  Buttons
+// ------------------------------------------------------
+
+.c-btn {
+  background-image: none;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  display: inline-block;
+  touch-action: manipulation;
+  min-height: $labcoat-global-input-height;
+  line-height: 46px; // Height - border width
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+	white-space: nowrap;
+  user-select: none;  
+  transition: $labcoat-global-transition;
+  @include labcoat-font-size(small, $line-height: false);
+  @include labcoat-font-family(medium);
+  @include labcoat-button(default);
+}
+
+.c-btn--arrow {
+  background-image: url(../images/btn-arrow.png);
+  background-image: url(../images/btn-arrow.svg), none;  
+  background-position: 92% center;
+  background-position: calc(100% - 18px) center;  
+  background-repeat: no-repeat;
+  padding-right: 45px;
+}
+
+.c-btn--block {
+  display: block;
+  width: 100%;
+}
+
+.c-btn:disabled,
+.c-btn--disabled {
+  pointer-events: none;
+  @include labcoat-button(disabled);
+}

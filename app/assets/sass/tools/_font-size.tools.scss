@@ -7,13 +7,25 @@
     @return map-get($labcoat-font-sizes, $key);
   }
 
-  @warn "Unknown `#{$key}` in $font-sizes.";
+  @warn "Unknown `#{$key}` in $labcoat-font-sizes.";
   @return null;
 }
 
-@mixin labcoat-font-size($font-size) {
-  $font-size: labcoat-font-size($font-size);
-  
+@function labcoat-font-leading($key) {
+  @if map-has-key($labcoat-font-leading, $key) {
+    @return map-get($labcoat-font-leading, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $labcoat-font-leading.";
+  @return null;
+}
+
+@mixin labcoat-font-size($key, $line-height: true) {
+  $font-size: labcoat-font-size($key);  
   font-size: $font-size;
   font-size: ($font-size / $labcoat-global-font-size) * 1rem;
+  @if ( $line-height == true) {
+    $line-height: labcoat-font-leading($key);  
+    line-height: $line-height;
+  }
 }

@@ -1,0 +1,31 @@
+// ------------------------------------------------------
+//  Breadcrumbs
+// ------------------------------------------------------
+
+.c-breadcrumb {
+  display: inline-block;
+  vertical-align: middle;
+  @include labcoat-font-size(small);
+}
+
+.c-breadcrumb__link,
+.c-breadcrumb__section {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.c-breadcrumb__link {
+  @include labcoat-link-underline(breadcrumb-link, breadcrumb-link-hover);  
+}
+
+.c-breadcrumb__section {
+  color: labcoat-theme-color(breadcrumb-link);
+}
+
+.c-breadcrumb__divider {
+  color: labcoat-theme-color(breadcrumb-divider);
+  display: inline-block;
+  margin: 0 10px 0;
+  vertical-align: baseline;  
+}

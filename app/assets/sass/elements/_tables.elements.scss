@@ -3,5 +3,31 @@
 // ------------------------------------------------------
 
 table {
+  background-color: transparent;
+  border-collapse: collapse;
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
   width: 100%;
+  @include mq($from: medium) {
+    display: table;
+  }
+}
+
+thead {
+  th {
+    border-bottom: 2px solid labcoat-theme-color(default-border);
+  }
+}
+
+th {
+  text-align: left;
+  vertical-align: bottom;
+  @include labcoat-font-family(medium);
+}
+
+th,
+td {
+  border-top: 1px solid labcoat-theme-color(default-border);
+  padding: 15px;
 }
