@@ -4,9 +4,10 @@
 
 // Tools
 @import "tools/mq.tools";
-@import "tools/colors.tools";
+@import "tools/background-image.tools";
 @import "tools/buttons.tools";
 @import "tools/clearfix.tools";
+@import "tools/colors.tools";
 @import "tools/font-families.tools";
 @import "tools/font-size.tools";
 @import "tools/links.tools";
@@ -44,7 +45,6 @@
 @import "components/images.components";
 @import "components/media.components";
 @import "components/page-headings.components";
-
 
 // Utilities
 @import "utilities/widths.utilities";

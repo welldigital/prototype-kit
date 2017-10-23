@@ -60,12 +60,11 @@ textarea {
 
 .o-form__select {
   background-color: labcoat-theme-color(input-bg);
-  background-image: url(../images/select-glyph.png);  
-  background-image: url(../images/select-glyph.svg), none;
   background-position: right center;
   background-repeat: no-repeat;
   border: 1px solid labcoat-theme-color(input-border);
   display: block;
+  @include labcoat-background-image('select-glyph');
   select {
     border: none;
     border-radius: 0;

@@ -1,0 +1,8 @@
+// ------------------------------------------------------
+//  Background Image
+// ------------------------------------------------------
+
+@mixin labcoat-background-image($filename) {
+  background-image: url("../images/#{$filename}.png");
+  background-image: url("../images/#{$filename}.svg"), none;
+}

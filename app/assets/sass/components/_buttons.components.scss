@@ -24,12 +24,11 @@
 }
 
 .c-btn--arrow {
-  background-image: url(../images/btn-arrow.png);
-  background-image: url(../images/btn-arrow.svg), none;  
   background-position: 92% center;
   background-position: calc(100% - 18px) center;  
   background-repeat: no-repeat;
   padding-right: 45px;
+  @include labcoat-background-image('btn-arrow');  
 }
 
 .c-btn--block {
