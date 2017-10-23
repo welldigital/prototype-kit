@@ -1,0 +1,56 @@
+// ------------------------------------------------------
+//  Articles
+// ------------------------------------------------------
+
+.c-article {
+
+  p {
+    margin: 0;
+  }
+
+  p + p {
+    margin-top: 22px; // 35px total
+  }
+
+  p + {
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+      margin-top: 67px; // 80px total
+    }        
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    & + p {
+      margin-top: 22px; // 35px total
+    }
+  }
+
+  ol,
+  ul {
+    margin: 67px 0; // 80px total
+  }
+
+  blockquote {
+    margin: 0;
+    p {
+      color: labcoat-theme-color(article-blockquote);
+      margin: 67px 0; // 80px total      
+      @include labcoat-font-family(medium);
+      @include labcoat-font-size(medium);
+      @include mq($from: large) {
+        margin: 62px 0; // 80px total
+        @include labcoat-font-size(large);
+      }
+    }
+  }
+
+}
