@@ -23,6 +23,7 @@
         <li><a href="#media">Media</a></li>
         <li><a href="#page-heading">Page Headings</a></li>
         <li><a href="#article-content">Article Content</a></li>
+        <li><a href="#accordion">Accordion</a></li>
     </ul>
 
     {% call docs_section({ title: 'Headings' }) %}
@@ -555,5 +556,36 @@
         </div>
 
     {% endcall %}
+
+    {% call docs_section({ title: 'Accordion' }) %}    
+
+        <div class="c-accordion">
+            <div class="c-accordion__title">
+                How do I know when it’s ready?
+            </div>
+            <div class="c-accordion__content c-accordion__content--hidden">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor dictum velit, sed pretium libero tempor ac. Quisque finibus arcu vitae justo dapibus, ut mattis lectus imperdiet. Quisque vel nibh sed lorem mattis tincidunt vel commodo mauris. Maecenas eu magna sed tellus iaculis dapibus ac sit amet mi. Sed ornare cursus libero, nec tempor dolor viverra in. Nunc gravida ante nisi.</p>
+            </div>
+            <div class="c-accordion__title">
+                How long will you have to wait?
+            </div>
+            <div class="c-accordion__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor dictum velit, sed pretium libero tempor ac. Quisque finibus arcu vitae justo dapibus, ut mattis lectus imperdiet. Quisque vel nibh sed lorem mattis tincidunt vel commodo mauris. Maecenas eu magna sed tellus iaculis dapibus ac sit amet mi. Sed ornare cursus libero, nec tempor dolor viverra in. Nunc gravida ante nisi.</p>
+            </div>
+            <div class="c-accordion__title">
+                What if I’m a carer?
+            </div>
+            <div class="c-accordion__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor dictum velit, sed pretium libero tempor ac. Quisque finibus arcu vitae justo dapibus, ut mattis lectus imperdiet. Quisque vel nibh sed lorem mattis tincidunt vel commodo mauris. Maecenas eu magna sed tellus iaculis dapibus ac sit amet mi. Sed ornare cursus libero, nec tempor dolor viverra in. Nunc gravida ante nisi.</p>
+            </div>
+            <div class="c-accordion__title">
+                How much does it cost?
+            </div>
+            <div class="c-accordion__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor dictum velit, sed pretium libero tempor ac. Quisque finibus arcu vitae justo dapibus, ut mattis lectus imperdiet. Quisque vel nibh sed lorem mattis tincidunt vel commodo mauris. Maecenas eu magna sed tellus iaculis dapibus ac sit amet mi. Sed ornare cursus libero, nec tempor dolor viverra in. Nunc gravida ante nisi.</p>
+            </div>        
+        </div>
+
+      {% endcall %}
 
 {% endblock %}

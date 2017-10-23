@@ -1,0 +1,31 @@
+// ------------------------------------------------------
+//  Accordion
+// ------------------------------------------------------
+
+.c-accordion {
+  border-top: 1px solid labcoat-theme-color(accordion-border);  
+}
+
+.c-accordion__title {
+  padding: 34px 0; // 40px total
+  @include labcoat-font-family(medium);
+  @include labcoat-font-size(medium);  
+}
+
+.c-accordion__content {
+  border-bottom: 1px solid labcoat-theme-color(accordion-border);
+}
+
+.js {
+  .c-accordion__content {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+  }  
+}
+
+.no-js .c-accordion__content,
+.js .c-accordion__content.is-active {
+  padding-top: 12px; // 60px total
+  padding-bottom: 53px; // 60px total    
+}

@@ -2,6 +2,10 @@
 //  Paragraphs
 // ------------------------------------------------------
 
+p {
+  margin: 0;
+}
+
 p.lead {
   @include labcoat-font-family(medium);
 }
