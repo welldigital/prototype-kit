@@ -61,8 +61,8 @@
   }
 
   // Images
-  .c-img {
-    margin-bottom: 80px;
+  picture + .lead {
+    margin-top: 80px;
   }
 
   p + table {
@@ -81,6 +81,11 @@
   // Card list
   .c-card + .c-card-list {
     margin-top: 80px;
+  }
+
+  // Media
+  .c-media .c-btn {
+    margin-bottom: 0;
   }
 
 }

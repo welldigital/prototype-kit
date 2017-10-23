@@ -4,14 +4,57 @@
 
 .c-media {
   background-color: labcoat-theme-color(media-bg);
-}
-
-.c-media__img {
-  float: left;
-  width: 50%;
+  display: block;
+  width: 100%;
+  @include labcoat-clearfix();
 }
 
 .c-media__body {
-  float: left;
-  width: 50%;
+  padding: 35px 40px 40px 40px; // 40px total
+  @include mq($from: large) {
+    padding: 55px 60px 60px 60px; // 60px total
+  }   
+}
+
+.c-media__subtitle {
+  margin-bottom: 30px; // 35px total
+  @include labcoat-font-family(medium);
+  @include labcoat-font-size(small);  
+}
+.c-media__title {
+  color: labcoat-theme-color(card-title);
+  margin-bottom: 35px; // 45px total
+}
+
+.c-media__content {
+  margin-bottom: 54px; // 60px total
+}
+
+.c-media__img {
+  width: 100%;  
+  @include mq($from: large) {
+    height: 100%;
+    object-fit: cover;
+  }  
+}
+
+// Layout
+@include mq($from: large) {
+
+  // Flexbox fallback
+  .c-media__figure,
+  .c-media__body {
+    float: left;
+    width: 50%;
+  }
+
+  // Flexbox supported
+  .c-media {
+    display: flex;
+  }
+  .c-media__figure,
+  .c-media__body {
+    flex: 0 1 50%;
+  }
+
 }
