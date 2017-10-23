@@ -36,7 +36,7 @@
 .docs {
 
   // Headings
-  .docs__example {
+  #headings + .docs__example {
     h1, h2, h3, h4, h5, h6 {
       margin-bottom: 20px;
     }
@@ -86,6 +86,10 @@
   // Media
   .c-media .c-btn {
     margin-bottom: 0;
+  }
+
+  .c-media + .c-media {
+    margin-top: 60px;
   }
 
 }

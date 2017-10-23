@@ -17,13 +17,14 @@
 }
 
 .c-media__subtitle {
-  margin-bottom: 30px; // 35px total
+  margin-bottom: 20px; // 35px total
   @include labcoat-font-family(medium);
   @include labcoat-font-size(small);  
 }
+
 .c-media__title {
   color: labcoat-theme-color(card-title);
-  margin-bottom: 35px; // 45px total
+  margin-bottom: 35px; // 50px total
 }
 
 .c-media__content {
@@ -38,6 +39,15 @@
   }  
 }
 
+// Modifiers
+.c-media--testimonial {
+  background-color: labcoat-theme-color(media-testimonial-bg);
+  .c-media__title,
+  .c-media__subtitle {
+    color: labcoat-theme-color(media-testimonial-text);
+  }
+}
+
 // Layout
 @include mq($from: large) {
 
@@ -47,6 +57,11 @@
     float: left;
     width: 50%;
   }
+  .c-media--testimonial {
+    .c-media__figure {
+      float: right;
+    }
+  }
 
   // Flexbox supported
   .c-media {
@@ -55,6 +70,9 @@
   .c-media__figure,
   .c-media__body {
     flex: 0 1 50%;
+  }
+  .c-media--testimonial {
+    flex-direction: row-reverse;
   }
 
 }
