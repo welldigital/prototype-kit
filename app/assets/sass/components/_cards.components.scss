@@ -9,7 +9,10 @@
 }
 
 .c-card__body {
-  padding: 60px; // 60px total
+  padding: 35px 40px 40px 40px; // 40px total
+  @include mq($from: large) {
+    padding: 55px 60px 60px 60px; // 60px total
+  }
 }
 
 .c-card__subtitle {

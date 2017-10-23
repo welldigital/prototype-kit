@@ -3,46 +3,65 @@
 // ------------------------------------------------------
 
 .c-card-list {
-  display: flex;
-  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
   @include mq($from: large) {
     margin-left: -15px;
     margin-right: -15px;
-  }  
+  }   
 }
 
 .c-card-list__item {
-  display: flex;
   margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;  
   width: 100%;
   @include mq($from: large) {
     width: 50%;
   }      
 }
 
-.c-card-list {
-  .c-card {
-    display: flex;
-    flex-direction: column;
-    @include mq($from: large) {
-      margin-left: 15px;
-      margin-right: 15px;
-    }     
+// Layout
+@include mq($from: large) {
+
+  // Flexbox fallback
+  .c-card-list {
+    @include labcoat-clearfix();
   }
-  .c-card__body {
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 auto;
-  }
-  .c-card__content {
-    display: flex;
-    flex: 1 0 auto;
-    flex-direction: column;
-    p {
-      flex: 1 0 auto;
+  .c-card-list__item {
+    display: block;
+    float: left;
+    width: 50%;
+    &:nth-child(odd) {
+      clear: left;
     }
   }
+
+  // Flexbox supported 
+  .c-card-list__item {
+    display: flex;
+  }
+  .c-card-list {
+    display: flex;
+    flex-wrap: wrap;     
+    .c-card {
+      display: flex;
+      flex-direction: column;   
+    }
+    .c-card__body {
+      display: flex;
+      flex-direction: column;
+      flex: 1 0 auto;
+    }
+    .c-card__content {
+      display: flex;
+      flex: 1 0 auto;
+      flex-direction: column;
+      p {
+        flex: 1 0 auto;
+      }
+    }
+  }
+
 }
