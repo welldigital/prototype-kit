@@ -21,6 +21,7 @@
         <li><a href="#breadcrumbs">Breadcrumbs</a></li>
         <li><a href="#cards">Cards</a></li>
         <li><a href="#media">Media</a></li>
+        <li><a href="#page-heading">Page Headings</a></li>
     </ul>
 
     {% call docs_section({ title: 'Headings' }) %}
@@ -511,5 +512,13 @@
         </div>        
 
     {% endcall %}
+    
+    {% call docs_section({ title: 'Page Heading' }) %} 
+
+        <div class="c-page-heading">
+            <h2 class="c-page-heading__title">Repeat Prescriptions</h2>
+        </div>
+
+    {% endcall %}    
 
 {% endblock %}

@@ -1,0 +1,10 @@
+// ------------------------------------------------------
+//  Page Headings
+// ------------------------------------------------------
+
+.c-page-heading {}
+
+.c-page-heading__title {
+  margin-bottom: 40px;
+  @include labcoat-font-size(large);  
+}

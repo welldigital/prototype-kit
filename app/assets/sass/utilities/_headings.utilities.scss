@@ -8,7 +8,12 @@
 .u-h4,
 .u-h5,
 .u-h6 {
-  margin: 0;
+  margin: 0;  
+}
+
+.u-h1,
+.u-h2,
+.u-h3 {
   @include labcoat-font-family(medium);  
 }
 
