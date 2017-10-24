@@ -5,14 +5,15 @@
 .c-header {
   background-color: labcoat-theme-color(header-bg);
   border-bottom: 2px solid labcoat-theme-color(header-border);
+  box-shadow: 0 0 10px 0 labcoat-theme-color(header-shadow);
   padding: 19px 0; // 80px height
   @include labcoat-clearfix();  
 }
 
 .c-header__logo-link {
   float: left;  
-  height: 40px;
-  width: 95px;
+  height: 50px;
+  width: 118px;
 }
 
 .c-header__logo {
@@ -20,7 +21,7 @@
   background-image: url(../images/well-pharmacy-logo.png);
   background-image: url(../images/well-pharmacy-logo.svg), none;
   background-repeat: no-repeat;
-  background-size: 95px 40px;
+  background-size: 118px 50px;
   height: 100%;
   width: 100%;
   text-indent: -9999px;  

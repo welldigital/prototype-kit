@@ -30,8 +30,25 @@
 
   ol,
   ul {
+    list-style-position: inside;
     margin: 67px 0; // 80px total
+    padding-left: 0;
+    & ol, 
+    & ul {
+      margin-bottom: 0;
+      padding-left: 40px;
+    }
+    ol {
+      list-style-type: lower-roman;
+    }  
   }
+  
+  li {
+    margin-bottom: 8px; // 20px total
+    ul, ol {
+      margin-top: 8px; // 20px total
+    }
+  }  
 
   blockquote {
     margin: 0;

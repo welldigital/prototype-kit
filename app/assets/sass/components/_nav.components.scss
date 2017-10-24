@@ -1,0 +1,30 @@
+// ------------------------------------------------------
+//  Navigation
+// ------------------------------------------------------
+
+.c-nav {
+  float: right;
+  margin-top: 10px;
+}
+
+.c-nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c-nav__item {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.c-nav__link {
+  color: labcoat-theme-color(nav-link);
+  display: block;
+  text-decoration: none;
+  @include labcoat-font-family(medium);
+  @include labcoat-font-size(small);
+  &:hover {
+    color: labcoat-theme-color(nav-link-hover);
+  }
+}
