@@ -1,22 +1,23 @@
 {% block master_above_all %}{% endblock %}
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        {% block master_head %}
-          <meta charset="utf-8">
-          <meta http-equiv="x-ua-compatible" content="ie=edge">
-          <title>{% block master_page_title %}{% block page_title %}{{ page.title }}{% endblock %}{% endblock %}</title>
-          <meta name="description" content="{{ page.description | d('') }}">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          {% block master_styles %}
-            <link rel="stylesheet" href="/public/stylesheets/application.css">
-            {% block head_styles %}{% endblock %}
-          {% endblock %}
-          {% block master_scripts %}{% block head_scripts %}{% endblock %}{% endblock %}
+  <head>
+      {% block master_head %}
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{% block master_page_title %}{% block page_title %}{{ page.title }}{% endblock %}{% endblock %}</title>
+        <meta name="description" content="{{ page.description | d('') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% block master_styles %}
+          <link rel="stylesheet" href="/public/stylesheets/application.css">
+          {% block head_styles %}{% endblock %}
         {% endblock %}
-    </head>
-    <body>
-      {% block master_body %}{% endblock %}
+        {% block master_scripts %}{% block head_scripts %}{% endblock %}{% endblock %}
+      {% endblock %}
+  </head>
+  <body>
+    {% block master_body %}{% endblock %}
+    {% block body_scripts %}{% endblock %}
   </body>
 </html>
 {% block master_below_all %} {% endblock %}

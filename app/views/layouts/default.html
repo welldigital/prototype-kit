@@ -9,6 +9,13 @@
     <script src="/public/javascripts/support.js" async></script>    
 {% endblock %}
 
+{% block body_scripts %}
+    <script src="/public/javascripts/jquery-1.11.3.js" defer></script>
+    <script src="/public/javascripts/class.js" defer></script>
+    <script src="/public/javascripts/app.js" defer></script>
+    <script src="/public/javascripts/accordion.js" defer></script>
+{% endblock %}
+
 {% block master_body %}
 
     {# block to for content directly beneath the opening html body tag #}
@@ -56,3 +63,4 @@
     {% block body_bottom %}{% endblock %}
 
 {% endblock %}
+

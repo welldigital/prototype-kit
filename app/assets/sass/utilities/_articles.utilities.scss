@@ -2,14 +2,19 @@
 //  Articles
 // ------------------------------------------------------
 
-.c-article {
+.u-article-content {
 
-  p {
-    margin: 0;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 22px; // 35px total
   }
-
-  p + p {
-    margin-top: 22px; // 35px total
+  
+  p {
+    margin-bottom: 22px; // 35px total
   }
 
   p + {
@@ -21,17 +26,6 @@
     & h6 {
       margin-top: 67px; // 80px total
     }        
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    & + p {
-      margin-top: 22px; // 35px total
-    }
   }
 
   ol,
@@ -51,6 +45,6 @@
         @include labcoat-font-size(large);
       }
     }
-  }
+  }  
 
 }

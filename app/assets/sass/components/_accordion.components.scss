@@ -7,25 +7,90 @@
 }
 
 .c-accordion__title {
-  padding: 34px 0; // 40px total
+  cursor: pointer;
+  padding: 34px 50px 34px 0; // 40px total
+  position: relative;
   @include labcoat-font-family(medium);
   @include labcoat-font-size(medium);  
 }
 
-.c-accordion__content {
-  border-bottom: 1px solid labcoat-theme-color(accordion-border);
+.c-accordion__symbol {
+  background-color: labcoat-theme-color(accordion-symbol-bg);
+  border: 1px solid labcoat-theme-color(accordion-symbol-border);
+  border-radius: 100%;
+  color: labcoat-theme-color(accordion-symbol-color);
+  margin-top: -26px;
+  position: absolute;
+    top: 50%;
+    right: 0;
+  height: 50px;
+  width: 50px;
+  transition: $labcoat-global-transition;
+  &:before,
+  &:after{
+      content: "";
+      position: absolute;
+      background-color: labcoat-theme-color(accordion-symbol-color);
+  }
+  // Vertical line
+  &:before {
+    top: 50%;
+    left: 50%;
+    height: 20px;
+    width: 2px;
+    margin-top: -10px;
+    margin-left: -1px;
+  }
+  // Horizontal line
+  &:after{
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    width: 20px;      
+    margin-top: -1px;
+    margin-left: -10px;
+  }  
+
 }
 
-.js {
-  .c-accordion__content {
-    height: 0;
-    overflow: hidden;
-    padding: 0;
+.c-accordion__content {
+  border-bottom: 1px solid labcoat-theme-color(accordion-border);
+  height: 0;
+  overflow: hidden;
+  padding: 0;  
+  &.is-open {
+    height: auto;
+    padding-top: 12px; // 60px total
+    padding-bottom: 53px; // 60px total    
   }  
 }
 
-.no-js .c-accordion__content,
-.js .c-accordion__content.is-active {
-  padding-top: 12px; // 60px total
-  padding-bottom: 53px; // 60px total    
+.c-accordion__title.is-open {
+  .c-accordion__symbol {
+    background-color: labcoat-theme-color(accordion-symbol-open-bg);
+    border: 1px solid labcoat-theme-color(accordion-symbol-open-border);  
+    color: labcoat-theme-color(accordion-symbol-open-color);  
+    &:before { 
+      transform: rotate(90deg); 
+    }
+    &:after { 
+      transform: rotate(180deg); 
+    }    
+    &:before,
+    &:after {
+      background-color: labcoat-theme-color(accordion-symbol-open-color);
+    }    
+  }
+}
+
+.no-js {
+  .c-accordion__title {
+    cursor: default;
+  }
+  .c-accordion__content {
+    height: auto;
+    overflow: none;
+    padding-top: 12px; // 60px total
+    padding-bottom: 53px; // 60px total
+  }  
 }

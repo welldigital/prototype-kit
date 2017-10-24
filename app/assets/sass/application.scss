@@ -37,7 +37,6 @@
 
 @import "components/accordion.components";
 @import "components/alerts.components";
-@import "components/articles.components";
 @import "components/banners.components";
 @import "components/breadcrumbs.components";
 @import "components/buttons.components";
@@ -48,6 +47,7 @@
 @import "components/page-headings.components";
 
 // Utilities
+@import "utilities/articles.utilities";
 @import "utilities/widths.utilities";
 @import "utilities/clearfix.utilities";
 @import "utilities/headings.utilities";
