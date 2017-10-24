@@ -4,7 +4,7 @@
 
 .c-header {
   background-color: labcoat-theme-color(header-bg);
-  border-bottom: 2px solid labcoat-theme-color(header-border);
+  border-bottom: 1px solid labcoat-theme-color(header-border);
   box-shadow: 0 0 10px 0 labcoat-theme-color(header-shadow);
   padding: 19px 0; // 80px height
   @include labcoat-clearfix();  

@@ -4,7 +4,8 @@
 
 .c-footer {
   background-color: labcoat-theme-color(footer-bg);
-  border-top: 2px solid labcoat-theme-color(footer-border);
+  border-top: 1px solid labcoat-theme-color(footer-border);
+  box-shadow: 0 0 10px 0 labcoat-theme-color(footer-shadow);  
   clear: both;
   padding: 32px 0; // 40px total
   @include labcoat-font-size(small);
