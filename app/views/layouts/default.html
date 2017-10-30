@@ -27,17 +27,18 @@
         {% block header %}
         <header class="c-header" role="banner">
             <div class="o-contain">      
-                <a class="c-header__logo-link" href="#" title="Well homepage" rel="home">
+                <a class="c-header__logo-link" href="/" title="Well homepage" rel="home">
                     <span class="c-header__logo">Well</span>
                 </a>
+                <a class="c-btn c-btn--arrow c-btn--header" href="https://finder.well.co.uk" target="_blank">Find a Pharmacy</a>                
                 <div class="c-nav">
                     <ul class="c-nav__list">
                         <li class="c-nav__item">
-                            <a class="c-nav__link" href="#">Prescriptions</a>
+                            <a class="c-nav__link" href="/prescriptions">Prescriptions</a>
                         </li>
                         <li class="c-nav__item">
-                            <a class="c-nav__link" href="#">Find a Pharmacy</a>
-                        </li>                        
+                            <a class="c-nav__link" href="/conditions">Conditions</a>
+                        </li>                  
                     </ul>
                 </div>
             </div><!-- /.o-contain -->
@@ -51,13 +52,38 @@
             <footer class="c-footer">
                 <div class="o-contain">
                                 
-                    <a class="c-footer__link" href="#">About</a>
-                    <a class="c-footer__link" href="#">Contact</a>
-                    <a class="c-footer__link" href="#">Policies</a>
-                    <a class="c-footer__link" href="#">News</a>
-                    <a class="c-footer__link" href="#">Careers</a>
-                    <a class="c-footer__link" href="#">Well Careplus</a>
-                
+                    <div class="c-footer__cta">
+                        <h2 class="c-footer__cta__title">Talk to us</h2>
+                        <div class="c-footer__cta__content">
+                            <p>We have a team on hand to answer your questions.</p>
+                            <p>
+                                <span class="c-footer__cta__contact">Phone: <a href="tel:+3330102222">0333 010 2222</a></span>
+                                <span class="c-footer__cta__contact">Email: <a href="mailto:hello@well.co.uk">hello@well.co.uk</a></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <ul class="c-footer__nav">
+                        <li class="c-footer__nav__item">
+                            <a class="c-footer__nav__link" href="#">About</a>
+                        </li>
+                        <li class="c-footer__nav__item">
+                            <a class="c-footer__nav__link" href="#">Contact</a>
+                        </li>
+                        <li class="c-footer__nav__item">
+                            <a class="c-footer__nav__link" href="#">Policies</a>
+                        </li>
+                        <li class="c-footer__nav__item">
+                            <a class="c-footer__nav__link" href="#">News</a>
+                        </li>
+                        <li class="c-footer__nav__item">
+                            <a class="c-footer__nav__link u-external-link" href="http://wellcareers.co.uk" target="_blank">Careers</a>
+                        </li>
+                        <li class="c-footer__nav__item">
+                            <a class="c-footer__nav__link u-external-link" href="https://www.well.co.uk/wellcareplus" target="_blank">Well Careplus</a>
+                        </li>
+                     </ul>
+
                     <div class="c-footer__copyright">
                         Copyright &copy; Bestway (Holdings) Ltd 2017. All rights reserved.
                     </div>

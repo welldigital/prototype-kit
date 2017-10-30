@@ -5,10 +5,8 @@
 .o-contain {
   margin-left: auto;
   margin-right: auto;
+  max-width: 90%;  
   @include labcoat-clearfix();
-  @include mq($from: medium) {
-    max-width: 90%;
-  }
   @include mq($from: xlarge) {
     max-width: 72%;
   }

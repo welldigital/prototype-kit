@@ -1,0 +1,69 @@
+// ------------------------------------------------------
+//  Process
+// ------------------------------------------------------
+
+.c-process {
+  background-color: labcoat-theme-color(process-bg);
+  padding-top: 92px; // 100px total
+  padding-bottom: 92px; // 100px total
+}
+
+.c-process__title {
+  margin-bottom: 88px; // 100px total
+  @include labcoat-font-size(large);
+}
+
+.c-process__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  @include labcoat-clearfix();
+  @include mq($from: medium) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.c-process__item {
+  margin-bottom: 52px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  @include mq($from: medium) {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
+    &:nth-of-type(odd) {
+      clear: left;
+    }
+  }
+  @include mq($from: large) {
+    margin-bottom: 0;
+    width: 25%;
+    &:nth-of-type(odd) {
+      clear: none;
+    }
+  }
+}
+
+.c-process__number {
+  background-color: labcoat-theme-color(process-number-bg);
+  border-radius: 100%;
+  color: labcoat-theme-color(process-number-color);
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 32px; // 40px total
+  text-align: center;
+  width: 50px;
+  @include mq($from: large) {
+    height: 80px;
+    line-height: 80px;
+    width: 80px;
+    @include labcoat-font-size(large, $line-height: false);
+  }
+}
+
+.c-process__content {
+  @include labcoat-font-size(small);
+}

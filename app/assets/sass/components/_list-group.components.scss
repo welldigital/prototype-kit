@@ -1,0 +1,32 @@
+// ------------------------------------------------------
+//  Media
+// ------------------------------------------------------
+
+.c-list-group {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.c-list-group__item {
+  border-bottom: 1px solid labcoat-theme-color(media-default-list-border);
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.c-list-group__link {
+  background-position: right center;  
+  background-repeat: no-repeat;
+  color: labcoat-theme-color(media-default-list-link);
+  display: block;
+  padding: 15px 0; // 60px total height
+  text-decoration: none;
+  @include labcoat-font-family(medium);  
+  @include labcoat-font-size(small);
+  @include labcoat-background-image('chevron-blue');    
+  &:hover {
+    color: labcoat-theme-color(media-default-list-link-hover)    
+  }
+}

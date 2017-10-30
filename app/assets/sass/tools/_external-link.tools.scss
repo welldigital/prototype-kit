@@ -1,0 +1,11 @@
+// ------------------------------------------------------
+//  External Link
+// ------------------------------------------------------
+
+@mixin labcoat-external-link() {
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 26px;
+  @include labcoat-background-image('external-link');
+}

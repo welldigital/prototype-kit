@@ -1,0 +1,96 @@
+{% set page = {
+  title: 'Prescriptions'
+} %}
+
+{% extends "layouts/default.html" %}
+
+{% block main %}
+
+  <div class="o-contain">
+
+    <div class="c-breadcrumb u-mt-base u-mb-base">
+      <a class="c-breadcrumb__link" href="/">Home</a>
+      <div class="c-breadcrumb__divider"> / </div>
+      <div class="c-breadcrumb__section">Prescriptions</div>
+    </div>
+
+    <div class="c-page-heading u-mb-base">
+      <h2 class="c-page-heading__title c-page-heading__title--xl ">Prescriptions</h2>
+    </div>
+    
+    <div class="c-article u-article-content u-mb-xl">  
+        <p class="lead">Well Pharmacy makes prescriptions easy. All you have to do is drop into your local branch and pick up your medicines.</p>
+    </div>    
+
+    <div class="c-media c-media--square u-mb-large">
+      <div class="c-media__figure">
+
+          <picture>
+              <source srcset="/public/images/placeholder-medium.jpg,  /public/images/placeholder-xl.jpg 2x" media="(min-width: 1300px)">                
+                  <source srcset="/public/images/placeholder-medium.jpg, /public/images/placeholder-large.jpg 2x" media="(min-width: 980px)">
+                  <source srcset="/public/images/placeholder-large.jpg, /public/images/placeholder-large.jpg 2x" media="(min-width: 740px)">
+              <img class="c-media__img" srcset="/public/images/placeholder-small.jpg, /public/images/placeholder-medium.jpg 2x" alt="Image with picture element">
+          </picture>
+
+      </div>
+      <div class="c-media__body">
+
+          <div class="c-media__subtitle">Repeat Prescriptions</div>
+          <h2 class="c-media__title">We’ll collect your prescription from your GP</h2>
+          <div class="c-media__content">
+              <p>We have over 780 pharmacies in the UK to choose from.</p>
+          </div>
+          <div class="c-media__btn">
+              <a class="c-btn" href="/repeat-prescriptions">Find out more</a>
+          </div>
+
+      </div>
+    </div>
+
+    <ul class="c-card-list u-mb-base">
+      <li class="c-card-list__item">
+          <div class="c-card">
+              <div class="c-card__body">
+                  <div class="c-card__subtitle">Home delivery</div>
+                  <h2 class="c-card__title">Prescriptions delivered to your door</h2>
+                  <div class="c-card__btn">
+                      <a class="c-btn" href="#">Find out more</a>
+                  </div>
+              </div>
+          </div>
+      </li>
+      <li class="c-card-list__item">
+          <div class="c-card">
+              <div class="c-card__body">
+                  <div class="c-card__subtitle">Prescription Costs</div>
+                  <h2 class="c-card__title">Check if you're exempt </h2>
+                  <div class="c-card__btn">
+                      <a class="c-btn" href="#">Find out more</a>
+                  </div>
+              </div>
+          </div>
+      </li>
+    </ul>    
+
+    <div class="c-media c-media--primary c-media--square c-media--reverse u-mb-xl">
+        <div class="c-media__figure">
+
+            <picture>
+                <source srcset="/public/images/placeholder-medium.jpg,  /public/images/placeholder-xl.jpg 2x" media="(min-width: 1300px)">                
+                <source srcset="/public/images/placeholder-medium.jpg, /public/images/placeholder-large.jpg 2x" media="(min-width: 980px)">
+                <source srcset="/public/images/placeholder-large.jpg, /public/images/placeholder-large.jpg 2x" media="(min-width: 740px)">
+                <img class="c-media__img" srcset="/public/images/placeholder-small.jpg, /public/images/placeholder-medium.jpg 2x" alt="Image with picture element">
+            </picture>
+
+        </div>
+        <div class="c-media__body">
+
+            <div class="c-media__subtitle">Happy Customers</div>
+            <h2 class="c-media__title">We help over 1.2 million people with their prescription</h2>
+
+        </div>
+    </div>   
+
+  </div>  
+
+{% endblock %}

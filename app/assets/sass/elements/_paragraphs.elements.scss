@@ -4,8 +4,11 @@
 
 p {
   margin: 0;
+  strong {
+    @include labcoat-font-family(medium);
+  }
 }
 
 p.lead {
-  @include labcoat-font-family(medium);
+  @include labcoat-font-size(medium);
 }

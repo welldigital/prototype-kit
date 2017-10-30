@@ -16,15 +16,16 @@
 }
 
 .c-card__subtitle {
-  margin-bottom: 30px; // 35px total
+  margin-bottom: 20px; // 35px total
   @include labcoat-font-family(medium);
-  @include labcoat-font-size(small);  
 }
+
 .c-card__title {
   color: labcoat-theme-color(card-title);
   margin-bottom: 35px; // 45px total
+  @include labcoat-font-size(large);
 }
 
-.c-card__content {
-  margin-bottom: 54px; // 60px total
+.c-card__btn {
+  margin-top: 54px; // 60px total
 }

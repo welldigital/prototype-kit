@@ -1,5 +1,5 @@
 {% set page = {
-  title: 'Test Page'
+  title: 'Home'
 } %}
 
 {% extends "layouts/default.html" %}
@@ -7,24 +7,142 @@
 {% block main %}
 
   <div class="o-contain">
+        
+    <div class="c-hero u-mt-xl u-mb-xl">  
+        <p><strong>We are Well</strong>. Personalised healthcare in the heart of your local community.</p>
+    </div>  
 
-    <div class="c-page-heading">
-        <h2 class="c-page-heading__title">Repeat Prescriptions</h2>
-    </div>
+    <div class="c-media c-media--square u-mb-large">
+      <div class="c-media__figure">
 
-    <div class="o-layout">
-      <div class="o-layout__item u-1/1 u-1/2@medium">
-
-        <p>lorem</p>
+          <picture>
+              <source srcset="/public/images/placeholder-medium.jpg,  /public/images/placeholder-xl.jpg 2x" media="(min-width: 1300px)">                
+              <source srcset="/public/images/placeholder-medium.jpg, /public/images/placeholder-large.jpg 2x" media="(min-width: 980px)">
+              <source srcset="/public/images/placeholder-large.jpg, /public/images/placeholder-large.jpg 2x" media="(min-width: 740px)">
+              <img class="c-media__img" srcset="/public/images/placeholder-small.jpg, /public/images/placeholder-medium.jpg 2x" alt="Image with picture element">
+          </picture>
 
       </div>
-      <div class="o-layout__item u-1/1 u-1/2@medium">
+      <div class="c-media__body">
 
-        <p>lorem</p>
+        <h2 class="c-media__title">Prescriptions</h2>
+          
+        <ul class="c-list-group">
+            <li class="c-list-group__item">
+                <a class="c-list-group__link" href="/repeat-prescriptions">Repeat Prescriptions</a>
+            </li>
+            <li class="c-list-group__item">
+                <a class="c-list-group__link" href="#">Home Delivery</a>
+            </li>                
+            <li class="c-list-group__item">
+                <a class="c-list-group__link" href="#">Prescription Cost</a>
+            </li>
+        </ul>
+          
+      </div>
+    </div> 
+        
+    <div class="c-media c-media--primary c-media--reverse c-media--square u-mb-large">
+      <div class="c-media__figure">
+
+          <picture>
+              <source srcset="/public/images/placeholder-medium.jpg,  /public/images/placeholder-xl.jpg 2x" media="(min-width: 1300px)">                
+              <source srcset="/public/images/placeholder-medium.jpg, /public/images/placeholder-large.jpg 2x" media="(min-width: 980px)">
+              <source srcset="/public/images/placeholder-large.jpg, /public/images/placeholder-large.jpg 2x" media="(min-width: 740px)">
+              <img class="c-media__img" srcset="/public/images/placeholder-small.jpg, /public/images/placeholder-medium.jpg 2x" alt="Image with picture element">
+          </picture>
 
       </div>
-    </div>
+      <div class="c-media__body">
 
-  </div>
+          <div class="c-media__subtitle">Happy Customers</div>
+          <h2 class="c-media__title">We help over 1.2 million people with their prescription</h2>
+
+      </div>
+    </div>      
+
+    <div class="c-media c-media--square u-mb-large">
+        <div class="c-media__figure">
+    
+            <picture>
+                <source srcset="/public/images/placeholder-medium.jpg,  /public/images/placeholder-xl.jpg 2x" media="(min-width: 1300px)">                
+                <source srcset="/public/images/placeholder-medium.jpg, /public/images/placeholder-large.jpg 2x" media="(min-width: 980px)">
+                <source srcset="/public/images/placeholder-large.jpg, /public/images/placeholder-large.jpg 2x" media="(min-width: 740px)">
+                <img class="c-media__img" srcset="/public/images/placeholder-small.jpg, /public/images/placeholder-medium.jpg 2x" alt="Image with picture element">
+            </picture>
+    
+        </div>
+        <div class="c-media__body">
+    
+            <h2 class="c-media__title">Long-term conditions</h2>
+            
+            <ul class="c-list-group">
+                <li class="c-list-group__item">
+                    <a class="c-list-group__link" href="#">Help with your medicines</a>
+                </li>
+                <li class="c-list-group__item">
+                    <a class="c-list-group__link" href="#">Diabetes</a>
+                </li>                
+                <li class="c-list-group__item">
+                    <a class="c-list-group__link" href="#">Heart conditions</a>
+                </li>
+                <li class="c-list-group__item">
+                    <a class="c-list-group__link" href="#">Asthma</a>
+                </li>                
+            </ul>
+            
+        </div>
+    </div>   
+
+    <ul class="c-card-list u-mb-xxl">
+        <li class="c-card-list__item">
+            <div class="c-card">
+                <div class="c-card__body">
+                    <h2 class="c-card__title">Simple conditions</h2>
+                    <div class="c-card__content">
+                        <ul class="c-list-group">
+                            <li class="c-list-group__item">
+                                <a class="c-list-group__link" href="#">Cold and flu</a>
+                            </li>
+                            <li class="c-list-group__item">
+                                <a class="c-list-group__link" href="#">Stomach problems</a>
+                            </li>                
+                            <li class="c-list-group__item">
+                                <a class="c-list-group__link" href="#">Skin problems</a>
+                            </li>
+                            <li class="c-list-group__item">
+                                <a class="c-list-group__link" href="#">Eye conditions</a>
+                            </li>                
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="c-card-list__item">
+            <div class="c-card">
+                <div class="c-card__body">
+                    <h2 class="c-card__title">Sexual health</h2>
+                    <div class="c-card__content">
+                        <ul class="c-list-group">
+                            <li class="c-list-group__item">
+                                <a class="c-list-group__link" href="#">Contraception</a>
+                            </li>
+                            <li class="c-list-group__item">
+                                <a class="c-list-group__link" href="#">Chlamydia</a>
+                            </li>                
+                            <li class="c-list-group__item">
+                                <a class="c-list-group__link" href="#">Gonorrhoea</a>
+                            </li>
+                            <li class="c-list-group__item">
+                                <a class="c-list-group__link" href="#">Genital warts</a>
+                            </li>                
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li> 
+    </ul>  
+
+  </div><!-- /.o-contain -->
 
 {% endblock %}

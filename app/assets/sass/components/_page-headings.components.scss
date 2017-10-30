@@ -2,9 +2,10 @@
 //  Page Headings
 // ------------------------------------------------------
 
-.c-page-heading {}
-
 .c-page-heading__title {
-  margin-bottom: 40px; // 60px total
   @include labcoat-font-size(large);  
+}
+
+.c-page-heading__title--xl {
+  @include labcoat-font-size(xl);  
 }

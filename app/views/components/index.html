@@ -21,9 +21,12 @@
         <li><a href="#breadcrumbs">Breadcrumbs</a></li>
         <li><a href="#cards">Cards</a></li>
         <li><a href="#media">Media</a></li>
+        <li><a href="#list-group">List Group</a></li>
         <li><a href="#page-heading">Page Headings</a></li>
         <li><a href="#article-content">Article Content</a></li>
         <li><a href="#accordion">Accordion</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#hero">Hero</a></li>
     </ul>
 
     {% call docs_section({ title: 'Headings' }) %}
@@ -498,7 +501,28 @@
             </div>
         </div>
 
-        <div class="c-media c-media--testimonial">
+        <div class="c-media">
+            <div class="c-media__figure">
+
+                <picture>
+                    <source srcset="/public/images/placeholder-medium.jpg,  /public/images/placeholder-xl.jpg 2x" media="(min-width: 1300px)">                
+                    <source srcset="/public/images/placeholder-medium.jpg, /public/images/placeholder-large.jpg 2x" media="(min-width: 980px)">
+                    <source srcset="/public/images/placeholder-large.jpg, /public/images/placeholder-large.jpg 2x" media="(min-width: 740px)">
+                    <img class="c-media__img" srcset="/public/images/placeholder-small.jpg, /public/images/placeholder-medium.jpg 2x" alt="Image with picture element">
+                </picture>
+
+            </div>
+            <div class="c-media__body">
+
+                <blockquote class="c-media__quote">
+                    <p>&ldquo;Well Pharmacy make everything so easy for me and take care of my prescriptions. It’s one less thing for me to worry about.&rdquo;</p>
+                    <cite class="c-media__cite">Arthur - Wolverhampton</cite>
+                </blockquote>
+
+            </div>
+        </div>
+                
+        <div class="c-media c-media--primary c-media--reverse">
             <div class="c-media__figure">
 
                 <picture>
@@ -515,10 +539,50 @@
                 <h2 class="c-media__title">We help over 1.2 million people with their prescription</h2>
 
             </div>
-        </div>        
+        </div> 
+        
+        <div class="c-media c-media--primary c-media--reverse">
+            <div class="c-media__figure">
+
+                <picture>
+                    <source srcset="/public/images/placeholder-medium.jpg,  /public/images/placeholder-xl.jpg 2x" media="(min-width: 1300px)">                
+                    <source srcset="/public/images/placeholder-medium.jpg, /public/images/placeholder-large.jpg 2x" media="(min-width: 980px)">
+                    <source srcset="/public/images/placeholder-large.jpg, /public/images/placeholder-large.jpg 2x" media="(min-width: 740px)">
+                    <img class="c-media__img" srcset="/public/images/placeholder-small.jpg, /public/images/placeholder-medium.jpg 2x" alt="Image with picture element">
+                </picture>
+
+            </div>
+            <div class="c-media__body">
+
+                <blockquote class="c-media__quote">
+                    <p>&ldquo;Well Pharmacy make everything so easy for me and take care of my prescriptions. It’s one less thing for me to worry about.&rdquo;</p>
+                    <cite class="c-media__cite">Arthur - Wolverhampton</cite>
+                </blockquote>
+
+            </div>
+        </div>         
 
     {% endcall %}
     
+    {% call docs_section({ title: 'List Group' }) %} 
+    
+        <ul class="c-list-group">
+            <li class="c-list-group__item">
+                <a class="c-list-group__link" href="#">Help with your medicines</a>
+            </li>
+            <li class="c-list-group__item">
+                <a class="c-list-group__link" href="#">Diabetes</a>
+            </li>                
+            <li class="c-list-group__item">
+                <a class="c-list-group__link" href="#">Heart conditions</a>
+            </li>
+            <li class="c-list-group__item">
+                <a class="c-list-group__link" href="#">Asthma</a>
+            </li>                
+        </ul>
+
+    {% endcall %} 
+
     {% call docs_section({ title: 'Page Heading' }) %} 
 
         <div class="c-page-heading">
@@ -604,6 +668,51 @@
             </div>        
         </div>
 
-      {% endcall %}
+    {% endcall %}
+
+    {% call docs_section({ title: 'Process' }) %}      
+
+        <div class="c-process">
+            
+            <h2 class="c-process__title">How to set up repeat prescriptions</h2>
+    
+            <ul class="c-process__list">
+            <li class="c-process__item">
+                <h3 class="c-process__number">1</h3>
+                <div class="c-process__content">
+                <p>Drop your first paper prescription off at a <a href="#">Well Pharmacy near you</a> or have your GP send it electronically.</p>
+                </div>
+            </li>
+            <li class="c-process__item">
+                <h3 class="c-process__number">2</h3>
+                <div class="c-process__content">
+                <p>Tell the pharmacist that you would like to set up repeat prescriptions with their branch.</p>          
+                </div>          
+            </li>
+            <li class="c-process__item">
+                <h3 class="c-process__number">3</h3>
+                <div class="c-process__content">
+                <p>All future prescriptions will now be sent to this pharmacy.</p>            
+                </div>
+            </li>
+            <li class="c-process__item">
+                <h3 class="c-process__number">4</h3>
+                <div class="c-process__content">
+                <p>A week before you run out of your medication go to your Well Pharmacy and pick up your new batch of medicines. If you get your medicines delivered we’ll come by your house and drop them off on the usual day.</p>            
+                </div>
+            </li>                  
+            </ul>
+                    
+        </div><!-- /.c-process -->
+
+    {% endcall %}
+            
+    {% call docs_section({ title: 'Hero' }) %}        
+
+        <div class="c-hero">  
+            <p><strong>We are Well</strong>. Personalised healthcare in the heart of your local community.</p>
+        </div>  
+
+    {% endcall %}
 
 {% endblock %}

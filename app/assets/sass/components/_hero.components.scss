@@ -1,0 +1,14 @@
+// ------------------------------------------------------
+//  Hero
+// ------------------------------------------------------
+
+.c-hero {
+  color: labcoat-theme-color(hero-text);
+  @include labcoat-font-size(large);
+  @include mq($from: large) {
+    max-width: 75%;
+  }
+  @include mq($from: xlarge) {
+    max-width: 66.66%;
+  }  
+}

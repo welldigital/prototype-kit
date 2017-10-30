@@ -28,7 +28,7 @@
   background-position: calc(100% - 18px) center;  
   background-repeat: no-repeat;
   padding-right: 45px;
-  @include labcoat-background-image('btn-arrow');  
+  @include labcoat-background-image('chevron-white');  
 }
 
 .c-btn--block {
@@ -40,4 +40,9 @@
 .c-btn--disabled {
   pointer-events: none;
   @include labcoat-button(disabled);
+}
+
+.c-btn--header {
+  float: right;
+  margin-left: 40px;
 }

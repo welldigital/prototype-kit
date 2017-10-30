@@ -13,11 +13,11 @@
 }
 
 .c-card-list__item {
-  margin-bottom: 30px;
-  padding-left: 15px;
-  padding-right: 15px;  
+  margin-bottom: 30px;  
   width: 100%;
   @include mq($from: large) {
+    padding-left: 15px;
+    padding-right: 15px;    
     width: 50%;
   }      
 }

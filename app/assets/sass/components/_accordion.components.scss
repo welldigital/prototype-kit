@@ -7,10 +7,10 @@
 }
 
 .c-accordion__title {
+  color: labcoat-theme-color(accordion-title);
   cursor: pointer;
   padding: 34px 50px 34px 0; // 40px total
   position: relative;
-  @include labcoat-font-family(medium);
   @include labcoat-font-size(medium);  
 }
 
@@ -27,7 +27,7 @@
   width: 50px;
   transition: $labcoat-global-transition;
   &:before,
-  &:after{
+  &:after {
       content: "";
       position: absolute;
       background-color: labcoat-theme-color(accordion-symbol-color);
@@ -49,8 +49,7 @@
     width: 20px;      
     margin-top: -1px;
     margin-left: -10px;
-  }  
-
+  }
 }
 
 .c-accordion__content {

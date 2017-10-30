@@ -13,7 +13,7 @@ $labcoat-global-transition:           all 300ms ease-in-out !default;
 
 // Brand & supporting colors
 $labcoat-colors: (
-  cerulean:         #00A9D5,
+  cerulean:         #0097BD,
   deep-cerulean:    #0080A4,
   regal-blue:       #005571,
   atlantis:         #7FBA2A,
@@ -35,44 +35,54 @@ $labcoat-colors: (
 // Theme colors
 $labcoat-theme-colors: (
   accordion-border:                 iron,
+  accordion-title:                  cerulean,
   accordion-symbol-bg:              solid-white,
   accordion-symbol-border:          cerulean,
   accordion-symbol-color:           cerulean,
   accordion-symbol-open-bg:         cerulean,
   accordion-symbol-open-border:     cerulean,
   accordion-symbol-open-color:      solid-white,  
-  alert-bg:                         lighter-grey,
+  alert-bg:                         porcelain,
   article-blockquote:               cerulean,
-  banner-bg:                        lighter-grey,
+  banner-bg:                        porcelain,
   banner-badge-color:               solid-white,
   breadcrumb-divider:               iron,
-  breadcrumb-link:                  thunder,
-  breadcrumb-link-hover:            cerulean,
-  card-bg:                          lighter-grey,
+  breadcrumb-link:                  boulder,
+  breadcrumb-link-hover:            thunder,
+  card-bg:                          porcelain,
   card-title:                       cerulean,
   default-border:                   iron,
   default-link:                     cerulean,
-  default-link-hover:               atlantis,
+  default-link-hover:               regal-blue,
   default-text:                     thunder,
-  footer-bg:                        porcelain,
+  footer-bg:                        solid-white,
   footer-border:                    lighter-grey,
+  footer-copyright:                 boulder,
   footer-link:                      thunder,
   footer-link-hover:                cerulean,
-  footer-text:                      boulder,
   footer-shadow:                    iron,
+  footer-cta-border:                iron,
+  footer-cta-title:                 cerulean,  
   header-bg:                        solid-white,
   header-border:                    lighter-grey,
   header-shadow:                    iron,
+  hero-text:                        cerulean,
   input-bg:                         solid-white,
   input-border:                     thunder,
   input-disabled:                   iron,
   input-placeholder:                cerulean,
-  media-bg:                         lighter-grey,
-  media-title:                      cerulean,
-  media-testimonial-bg:             mountain-meadow,
-  media-testimonial-text:           solid-white,
+  media-default-bg:                 porcelain,
+  media-default-title:              cerulean,
+  media-default-list-border:        iron,
+  media-default-list-link:          thunder,
+  media-default-list-link-hover:    cerulean,
+  media-primary-bg:                 regal-blue,
+  media-primary-text:               solid-white,
   nav-link:                         thunder,
   nav-link-hover:                   cerulean,
+  process-bg:                       porcelain,
+  process-number-bg:                cerulean,  
+  process-number-color:             solid-white,
   state-default:                    cerulean,
   state-success:                    atlantis,  
   state-danger:                     flame-pea,
@@ -93,18 +103,20 @@ $labcoat-font-weights: (
 
 // Font sizes
 $labcoat-font-sizes: (
-  base:             22px,
+  base:             20px,
   small:            18px,
   medium:           26px,
-  large:            40px
+  large:            38px,
+  xl:               60px
 );
 
 // Line heights
 $labcoat-font-leading: (
-  base:             1.36,   // 30px / 22px = 1.36
+  base:             1.6,    // 32px / 20px = 1.6
   small:            1.66,   // 30px / 18px = 1.66
   medium:           1.3,    // 34px / 26px = 1.3
-  large:            1.3    // 52px / 40px = 1.3
+  large:            1.3,    // 50px / 38px = 1.3
+  xl:               1.2     // 72px / 60px = 1.2
 );
 
 // Buttons
@@ -113,8 +125,8 @@ $labcoat-buttons: (
     bg-color:             cerulean, 
     border-color:         cerulean, 
     color:                solid-white, 
-    hover-bg-color:       deep-cerulean, 
-    hover-border-color:   deep-cerulean, 
+    hover-bg-color:       regal-blue, 
+    hover-border-color:   regal-blue, 
     hover-color:          solid-white
   ),
   disabled: (
