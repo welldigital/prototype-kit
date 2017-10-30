@@ -1,0 +1,71 @@
+{% set page = {
+  title: 'Prescription Costs'
+} %}
+
+{% extends "layouts/default.html" %}
+
+{% block main %}
+
+  <div class="o-contain">
+
+    <div class="c-breadcrumb u-mt-base u-mb-base">
+      <a class="c-breadcrumb__link" href="/">Home</a>
+      <div class="c-breadcrumb__divider"> / </div>
+      <div class="c-breadcrumb__section">Prescription Costs</div>
+    </div>
+
+    <div class="c-page-heading u-mb-base">
+      <h2 class="c-page-heading__title c-page-heading__title--xl ">Paying for your medicines</h2>
+    </div>
+    
+    <div class="c-article u-article-content u-mb-xl">  
+
+        <p class="lead">How much you pay depends on the number of medicines you’re on and where you live. You might be exempt from paying all together.</p>
+        
+        <h2>NHS prescriptions</h2>
+        <p>In England you have to pay £8.60 for each medicine you’ve been prescribed.</p>
+        <p>In Scotland, Wales and Northern Ireland you don’t have to pay anything.</p>
+        
+        <h2>Private prescriptions</h2>
+        <p>What you pay depends on the medicine you’re prescribed. To find out the cost, show your prescription.</p>
+        
+        <h2>Check if you can get free NHS prescriptions</h2>
+        
+        <p>The NHS offers free medicines for some people. You have to be one or more of the following.</p>
+        
+        <h3>Age</h3>
+        <p>You’re:</p>
+        
+        <ul>
+        <li>60 or over</li>
+        <li>16 to 18 and in full-time education</li>
+        <li>15 or under</li>
+        </ul>
+        
+        <h3>Long-term condition, disability or pregnancy</h3>
+        <p>Your GP will give you an application form to fill in. Within 10 days the NHS should send you a letter saying you don’t have to pay for your medicines. Show this to your local Well Pharmacy when you pick up your medicines.</p>
+        
+        <p>If your GP didn’t give you an application form, phone the surgery to check your long-term condition or disability qualifies for an exemption.</p>
+        
+        <h3>Benefits</h3>
+        <p>If you’re on benefits tell your GP. They’ll give you an application form to fill in.</p>
+        <p>Within 10 days the NHS should send you a letter saying you don’t have to pay for your medicines. Show this to your local Well Pharmacy when you pick up your medicines.</p>
+        
+        <h3>Tax credits</h3>
+        <p>If you get tax credits the NHS automatically send you a letter saying you don’t have to pay for your medicines.</p>
+        
+        <p class="lead">Think you shouldn’t be paying for your medicines and didn’t get a letter from the NHS?</p>
+        <p class="lead">Speak to your local Well pharmacist or call the NHS helpline on 0300 330 1349.</p>
+        
+        <h2>Save money on your NHS medicines</h2>
+        <p>If you’re on 2 or more medicines a month you can pay for your prescriptions in advance and save at least £7.50 a month. It’s a bit like buying season ticket.</p>
+        
+        <p>You’ll have to buy a ‘prescription prepayment certificate’ from the NHS. You can do this online.</p>
+        
+        <a href="https://apps.nhsbsa.nhs.uk/ppcwebsales/patient.do" target="_blank">Pay for your NHS prescriptions in advance</a>
+
+    </div>
+
+  </div>  
+
+{% endblock %}
