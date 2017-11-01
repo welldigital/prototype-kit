@@ -5,7 +5,7 @@
 .c-process {
   background-color: labcoat-theme-color(process-bg);
   padding-top: 92px; // 100px total
-  padding-bottom: 92px; // 100px total
+  padding-bottom: 40px; // 100px total
 }
 
 .c-process__title {
@@ -26,9 +26,6 @@
 
 .c-process__item {
   margin-bottom: 52px;
-  &:last-of-type {
-    margin-bottom: 0;
-  }
   @include mq($from: medium) {
     float: left;
     padding-left: 15px;
@@ -36,13 +33,6 @@
     width: 50%;
     &:nth-of-type(odd) {
       clear: left;
-    }
-  }
-  @include mq($from: large) {
-    margin-bottom: 0;
-    width: 25%;
-    &:nth-of-type(odd) {
-      clear: none;
     }
   }
 }
