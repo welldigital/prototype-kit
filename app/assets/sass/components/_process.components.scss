@@ -9,6 +9,7 @@
 }
 
 .c-process__title {
+  color: labcoat-theme-color(process-title);
   margin-bottom: 88px; // 100px total
   @include labcoat-font-size(large);
 }
