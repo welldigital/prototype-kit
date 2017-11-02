@@ -55,5 +55,21 @@
 }
 
 .c-process__content {
-  @include labcoat-font-size(small);
+  @include labcoat-font-size(base);
+}
+
+
+// Modifiers
+.c-process--three {
+  .c-process__item {
+    @include mq($from: large) {
+      width: 33.33%;
+      &:nth-of-type(odd) {
+        clear: none;
+      }      
+      &:nth-of-type(3n+1) {
+        clear: left;
+      }
+    }
+  }  
 }
