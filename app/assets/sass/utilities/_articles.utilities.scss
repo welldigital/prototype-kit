@@ -5,33 +5,53 @@
 .u-article-content {
 
   h1,
-  h2,
+  h2 {
+    margin-bottom: 40px; // 60px total
+  }
+
   h3,
   h4,
   h5,
   h6 {
-    margin-bottom: 22px; // 35px total
+    margin-bottom: 28px; // 45px total
   }
+
+  h2 {
+    @include labcoat-font-size(large); 
+  }
+
+  h3 {
+    @include labcoat-font-size(medium); 
+  }  
   
   p {
     margin-bottom: 22px; // 35px total
   }
 
-  p + {
-    & h1,
-    & h2,
-    & h3,
-    & h4,
-    & h5,
-    & h6 {
-      margin-top: 67px; // 80px total
-    }        
+  p,
+  ol,
+  ul {
+    & + {
+      & h1,
+      & h2,
+      & h3,
+      & h4,
+      & h5,
+      & h6,
+      & p.lead {      
+        margin-top: 65px; // 80px total
+      }
+    }
+  }
+
+  p.lead + p.lead {
+    margin-top: 30px; // 45px total
   }
 
   ol,
   ul {
     list-style-position: inside;
-    margin: 67px 0; // 80px total
+    margin: 22px 0; // 35px total
     padding-left: 0;
     & ol, 
     & ul {
