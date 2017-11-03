@@ -12,8 +12,10 @@
 {% block body_scripts %}
     <script src="/public/javascripts/jquery-1.11.3.js" defer></script>
     <script src="/public/javascripts/class.js" defer></script>
+    <script src="/public/javascripts/lockscroll.js" defer></script>
     <script src="/public/javascripts/app.js" defer></script>
     <script src="/public/javascripts/accordion.js" defer></script>
+    <script src="/public/javascripts/menu.js" defer></script>
 {% endblock %}
 
 {% block master_body %}
@@ -25,24 +27,48 @@
     {% block body_content %}
 
         {% block header %}
-        <header class="c-header" role="banner">
+        <header class="c-header js-header" role="banner">
             <div class="o-contain">      
                 <a class="c-header__logo-link" href="/" title="Well homepage" rel="home">
                     <span class="c-header__logo">Well</span>
                 </a>
-                <a class="c-btn c-btn--arrow c-btn--header" href="https://finder.well.co.uk" target="_blank">Find a Pharmacy</a>                
-                <div class="c-nav">
-                    <ul class="c-nav__list">
-                        <li class="c-nav__item">
-                            <a class="c-nav__link" href="/prescriptions">Prescriptions</a>
-                        </li>
-                        <li class="c-nav__item">
-                            <a class="c-nav__link" href="/long-term-conditions">Conditions</a>
-                        </li>                  
-                    </ul>
+                <div class="c-header__navigation">
+                    <a class="c-btn c-btn--arrow c-btn--header" href="https://finder.well.co.uk" target="_blank">Find a Pharmacy</a>                
+                    <div class="c-nav">
+                        <ul class="c-nav__list">
+                            <li class="c-nav__item">
+                                <a class="c-nav__link" href="/prescriptions">Prescriptions</a>
+                            </li>
+                            <li class="c-nav__item">
+                                <a class="c-nav__link" href="/long-term-conditions">Conditions</a>
+                            </li>                  
+                        </ul>
+                    </div>
                 </div>
+                <button class="c-btn c-btn--toggle c-btn--secondary c-header__menu-button js-menu-button" aria-expanded="false" aria-controls="primary-navigation">
+                    <span class="c-btn__text js-menu-button-text" data-open-text="Close" data-closed-text="Menu">Menu</span>
+                    <span class="c-btn__icon c-btn__icon--open"></span>
+                    <span class="c-btn__icon c-btn__icon--closed"></span>
+                </button>
             </div><!-- /.o-contain -->
-        </header><!-- /.c-header -->     
+        </header><!-- /.c-header -->
+
+        <nav class="c-primary-navigation js-primary-navigation" id="primary-navigation" role="navigation">
+            <div class="o-contain">
+                <ul class="c-list-group">
+                    <li class="c-list-group__item">
+                        <a class="c-list-group__link" href="https://finder.well.co.uk" target="_blank">Find a Pharmacy</a>
+                    </li>
+                    <li class="c-list-group__item">
+                        <a class="c-list-group__link" href="/prescriptions">Prescriptions</a>
+                    </li>
+                    <li class="c-list-group__item">
+                        <a class="c-list-group__link" href="/long-term-conditions">Conditions</a>
+                    </li>                
+                </ul>
+            </div>
+        </nav>
+
         {% endblock %}
         
         <main>{% block main %}{% endblock %}</main>

@@ -46,3 +46,50 @@
   float: right;
   margin-left: 40px;
 }
+
+.c-btn--secondary {
+  border-width: 1px;
+  border-radius: 2px;
+  .c-btn__icon--open {
+    @include labcoat-background-image('menu-blue');
+  }
+  .c-btn__icon--closed {
+    @include labcoat-background-image('close-blue');
+  }
+  @include labcoat-button(secondary);
+}
+
+.c-btn__icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+}
+
+.c-btn--toggle {
+  .c-btn__text {
+   [dir="ltr"] & {
+     margin-right: 0.5em;
+   }
+   [dir="rtl"] & {
+     margin-left: 1rem;
+   }
+  }
+  &[aria-expanded="false"] {
+    .c-btn__icon--open {
+      display: inline-block;
+    }
+    .c-btn__icon--closed {
+      display: none;
+    }
+  }
+  &[aria-expanded="true"] {
+    .c-btn__icon--open {
+      display: none;
+    }
+    .c-btn__icon--closed {
+      display: inline-block;
+    }
+  }
+}

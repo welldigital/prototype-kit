@@ -90,7 +90,8 @@ $labcoat-theme-colors: (
   state-default:                    cerulean,
   state-success:                    atlantis,  
   state-danger:                     flame-pea,
-  state-warning:                    neon-carrot
+  state-warning:                    neon-carrot,
+  menu-bg:                          lighter-grey
 );
 
 // Font families
@@ -140,5 +141,13 @@ $labcoat-buttons: (
     hover-bg-color:       iron, 
     hover-border-color:   iron, 
     hover-color:          solid-white
+  ),
+  secondary: (
+    bg-color:             solid-white, 
+    border-color:         cerulean, 
+    color:                cerulean, 
+    hover-bg-color:       solid-white, 
+    hover-border-color:   cerulean, 
+    hover-color:          cerulean
   )
 );

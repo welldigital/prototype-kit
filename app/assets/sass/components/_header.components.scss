@@ -7,7 +7,17 @@
   border-bottom: 1px solid labcoat-theme-color(header-border);
   box-shadow: 0 0 10px 0 labcoat-theme-color(header-shadow);
   padding: 19px 0; // 80px height
-  @include labcoat-clearfix();  
+  @include labcoat-clearfix();
+  &.is-open {
+    @include mq($until: medium) {
+      z-index: 1;
+      box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left:0;
+    }
+  }
 }
 
 .c-header__logo-link {
@@ -27,3 +37,16 @@
   text-indent: -9999px;  
 }
 
+.c-header__navigation {
+  @include labcoat-clearfix();
+  @include mq($until: medium) {
+    display: none;
+  }
+}
+
+.c-header__menu-button {
+  float: right;
+  @include mq($from: medium) {
+    display: none;
+  }
+}

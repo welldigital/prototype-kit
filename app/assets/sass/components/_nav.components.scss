@@ -28,3 +28,24 @@
     color: labcoat-theme-color(nav-link-hover);
   }
 }
+
+.c-primary-navigation {
+  position: fixed;
+  width: 100%;
+  top: 89px;
+  left: 0;
+  height: calc(100vh - 90px);
+  background: labcoat-theme-color(menu-bg);
+  display: none;
+  padding: 30px 10px;
+  &.is-open {
+    display: block;
+    @include mq($from: medium){
+      display: none;
+    }
+  }
+  @include mq($from: medium) {
+    display: none;
+  }
+  z-index: 0;
+}
