@@ -22,8 +22,12 @@
 
 .c-card__title {
   color: labcoat-theme-color(card-title);
-  margin-bottom: 35px; // 45px total
-  @include labcoat-font-size(large);
+  margin-bottom: 17px; // 45px total
+  @include labcoat-font-size(medium);
+  @include mq($from: medium) {
+    margin-bottom: 35px; // 45px total
+    @include labcoat-font-size(large);
+  }
 }
 
 .c-card__btn {

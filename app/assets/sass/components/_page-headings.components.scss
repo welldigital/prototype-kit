@@ -12,9 +12,15 @@
 }
 
 .c-page-heading__title {
-  @include labcoat-font-size(large);
+  @include labcoat-font-size(medium);
+  @include mq($from: medium) {
+    @include labcoat-font-size(large);
+  }
 }
 
 .c-page-heading__title--xl {
-  @include labcoat-font-size(xl);  
+  @include labcoat-font-size(large);  
+  @include mq($from: medium) {
+    @include labcoat-font-size(xl);
+  }
 }

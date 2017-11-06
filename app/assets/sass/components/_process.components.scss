@@ -4,14 +4,22 @@
 
 .c-process {
   background-color: labcoat-theme-color(process-bg);
-  padding-top: 92px; // 100px total
-  padding-bottom: 40px; // 100px total
+  padding-top: 45px; // 100px total
+  padding-bottom: 20px; // 100px total
+  @include mq($from: medium) {
+    padding-top: 92px; // 100px total
+    padding-bottom: 40px; // 100px total
+  }
 }
 
 .c-process__title {
   color: labcoat-theme-color(process-title);
-  margin-bottom: 88px; // 100px total
-  @include labcoat-font-size(large);
+  margin-bottom: 44px;
+  @include labcoat-font-size(medium);
+  @include mq($from: medium) {
+    margin-bottom: 88px; // 100px total
+    @include labcoat-font-size(large);
+  }
 }
 
 .c-process__list {

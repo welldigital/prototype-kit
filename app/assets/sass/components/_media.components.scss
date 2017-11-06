@@ -31,8 +31,12 @@
 
 .c-media__title {
   color: labcoat-theme-color(media-default-title);
-  margin-bottom: 35px; // 50px total
-  @include labcoat-font-size(large);  
+  margin-bottom: 17px; // 50px total
+  @include labcoat-font-size(medium);
+  @include mq($from: medium){
+    margin-bottom: 35px; // 50px total
+    @include labcoat-font-size(large);
+  }
 }
 
 .c-media__content {

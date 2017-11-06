@@ -4,7 +4,10 @@
 
 .c-hero {
   color: labcoat-theme-color(hero-text);
-  @include labcoat-font-size(large);
+  @include labcoat-font-size(medium);
+  @include mq($from: medium) {
+    @include labcoat-font-size(large);
+  }
   @include mq($from: large) {
     max-width: 75%;
   }

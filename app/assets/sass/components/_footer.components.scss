@@ -49,8 +49,12 @@
 
 .c-footer__cta__title {
   color: labcoat-theme-color(footer-cta-title);
-  margin-bottom: 20px; // 40px total
-  @include labcoat-font-size(large);
+  margin-bottom: 10px;
+  @include labcoat-font-size(medium);
+  @include mq($from: medium) {
+    margin-bottom: 20px; // 40px total
+    @include labcoat-font-size(large);
+  }
 }
 
 .c-footer__cta__content {

@@ -10,5 +10,7 @@ p {
 }
 
 p.lead {
-  @include labcoat-font-size(medium);
+  @include mq($from: medium) {
+    @include labcoat-font-size(medium);
+  }
 }
