@@ -60,6 +60,9 @@ var nunjucksAppEnv = nunjucks.configure(appViews, {
 // Nunjucks filters
 utils.addNunjucksFilters(nunjucksAppEnv)
 
+// Nunjucks markdown
+utils.addNunjucksMarkDown(nunjucksAppEnv)
+
 // Set views engine
 app.set('view engine', 'html')
 

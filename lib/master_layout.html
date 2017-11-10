@@ -1,3 +1,11 @@
+{% macro markdown() %}
+{% set content=
+caller() %}
+{% markdown %}
+{{ content }}
+{% endmarkdown %}
+{% endmacro %}
+
 {% block master_above_all %}{% endblock %}
 <!doctype html>
 <html class="no-js" lang="" dir="ltr">
