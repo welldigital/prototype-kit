@@ -33,3 +33,8 @@
 .c-card__btn {
   margin-top: 54px; // 60px total
 }
+
+// Flexbox supported
+.c-card__title {
+  flex: 1 0 auto;
+}
