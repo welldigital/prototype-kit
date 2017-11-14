@@ -1,0 +1,34 @@
+{% set page = {
+  title: 'Page not found'
+} %}
+
+{% extends "layouts/default.html" %}
+
+{% block main %}
+
+  <div class="o-contain">
+
+    <div class="c-breadcrumb u-mt-base u-mb-base">
+      <a class="c-breadcrumb__link" href="/">Home</a>
+      <div class="c-breadcrumb__divider"> / </div>
+      <div class="c-breadcrumb__section">Page not found</div>
+    </div>
+
+    <div class="c-page-heading u-mb-base">
+      <h2 class="c-page-heading__title c-page-heading__title--xl">Page not found</h2>
+    </div>
+
+    <div class="c-article u-article-content u-mb-xxl">
+
+      <p>If you entered a web address please check it’s correct.</p>
+      <p>You can also browse from our homepage to find the information you need.</p>
+
+      <br>
+
+      <a class="c-btn" href="/">Go to our homepage</a>
+
+    </div>
+
+  </div><!-- /.o-contain -->
+
+{% endblock %}
