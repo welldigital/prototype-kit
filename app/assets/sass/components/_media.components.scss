@@ -10,11 +10,7 @@
 }
 
 .c-media__img {
-  width: 100%;  
-  @include mq($from: large) {
-    height: 100%;
-    object-fit: cover;
-  }  
+  width: 100%;
 }
 
 .c-media__body {
@@ -47,7 +43,7 @@
   margin: 0;
   padding: 0;
   p {
-    @include labcoat-font-family(medium);    
+    @include labcoat-font-family(medium);
     @include labcoat-font-size(medium);
   }
 }
@@ -66,35 +62,6 @@
   .c-media__subtitle,
   .c-media__quote {
     color: labcoat-theme-color(media-primary-text);
-  }
-}
-
-.c-media--square {
-  @include mq($from: large) {  
-    position: relative;
-    &:after {
-      content: "";
-      display: block;
-      padding-bottom: 50%;    
-    }
-    .c-media__figure,
-    .c-media__body {
-      position: absolute;
-        top: 0;
-      height: 100%;
-      width: 50%;
-    }
-    .c-media__body {
-      left: 50%;
-    }
-    &.c-media--reverse {
-      .c-media__body {
-        left: 0;
-      }
-      .c-media__figure {
-        left: 50%;
-      }
-    }
   }
 }
 
