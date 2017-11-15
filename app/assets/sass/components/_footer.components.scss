@@ -5,21 +5,27 @@
 .c-footer {
   background-color: labcoat-theme-color(footer-bg);
   border-top: 1px solid labcoat-theme-color(footer-border);
-  box-shadow: 0 0 10px 0 labcoat-theme-color(footer-shadow);  
+  box-shadow: 0 0 10px 0 labcoat-theme-color(footer-shadow);
   clear: both;
   padding: 52px 0; // 60px total
 }
-  
+
 .c-footer__copyright {
   color: labcoat-theme-color(footer-copyright);
-  margin-top: 45px; // 60px total
-  @include labcoat-font-size(small);  
+  margin-top: 50px; // 60px total
+  @include labcoat-font-size(small);
+  @include mq($from: large) {
+    margin-top: 25px; // 60px total
+  }
 }
 
 .c-footer__nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  @include mq($from: large) {
+    float: left;
+  }
 }
 
 .c-footer__nav__item {
@@ -29,7 +35,7 @@
     display: inline;
     margin-bottom: 0;
     margin-right: 40px;
-  }  
+  }
 }
 
 .c-footer__nav__link {
@@ -39,6 +45,19 @@
   &:hover {
     color: labcoat-theme-color(footer-link-hover);
   }
+}
+
+.c-footer__logo {
+  margin-top: 35px; // 45px total
+  max-width: 200px;
+  @include mq($from: large) {
+    float: right;
+    margin-top: 0;
+  }
+}
+
+.c-footer__group {
+  @include labcoat-clearfix();
 }
 
 .c-footer__cta {
@@ -67,7 +86,7 @@
     @include mq($from: medium) {
       display: inline;
       margin-bottom: 0;
-    }    
+    }
   }
   a {
     margin-left: 8px;
