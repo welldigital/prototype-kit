@@ -1,8 +1,11 @@
 $mq-breakpoints: (
 	small:			320px,
-	medium:			800px,
+	medium:			740px,
 	large:			980px,
-	xlarge:			1300px
+  xlarge:			1300px,
+
+  // Tweakpoints
+  mobileNav:  860px
 );
 
 $labcoat-use-markup-fix: false !default;

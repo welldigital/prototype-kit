@@ -15,10 +15,7 @@
 
 .c-nav__item {
   display: inline-block;
-  margin-left: 30px;
-  @include mq($from: medium){
-    margin-left: 40px;
-  }
+  margin-left: 40px;
 }
 
 .c-nav__link {
@@ -43,11 +40,11 @@
   padding: 30px 10px;
   &.is-open {
     display: block;
-    @include mq($from: medium){
+    @include mq($from: mobileNav){
       display: none;
     }
   }
-  @include mq($from: medium) {
+  @include mq($from: mobileNav) {
     display: none;
   }
   z-index: 0;

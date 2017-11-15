@@ -21,7 +21,7 @@
 }
 
 .c-header__logo-link {
-  float: left;  
+  float: left;
   height: 50px;
   width: 118px;
 }
@@ -34,19 +34,19 @@
   background-size: 118px 50px;
   height: 100%;
   width: 100%;
-  text-indent: -9999px;  
+  text-indent: -9999px;
 }
 
 .c-header__navigation {
   @include labcoat-clearfix();
-  @include mq($until: medium) {
+  @include mq($until: mobileNav) {
     display: none;
   }
 }
 
 .c-header__menu-button {
   float: right;
-  @include mq($from: medium) {
+  @include mq($from: mobileNav) {
     display: none;
   }
 }

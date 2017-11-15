@@ -44,10 +44,7 @@
 
 .c-btn--header {
   float: right;
-  margin-left: 30px;
-  @include mq($from: medium){
-    margin-left: 40px;
-  }
+  margin-left: 40px;
 }
 
 .c-btn--secondary {
