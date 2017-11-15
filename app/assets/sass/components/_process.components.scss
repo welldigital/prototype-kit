@@ -15,10 +15,9 @@
 .c-process__title {
   color: labcoat-theme-color(process-title);
   margin-bottom: 44px;
-  @include labcoat-font-size(medium);
+  @include labcoat-font-size(large);
   @include mq($from: medium) {
     margin-bottom: 88px; // 100px total
-    @include labcoat-font-size(large);
   }
 }
 
@@ -52,7 +51,7 @@
   color: labcoat-theme-color(process-number-color);
   height: 50px;
   line-height: 50px;
-  margin-bottom: 32px; // 40px total
+  margin-bottom: 34px; // 40px total
   text-align: center;
   width: 50px;
   @include mq($from: large) {
@@ -61,6 +60,12 @@
     width: 80px;
     @include labcoat-font-size(large, $line-height: false);
   }
+}
+
+.c-process__subtitle {
+  color: labcoat-theme-color(process-subtitle);
+  margin-bottom: 14px; // 30px total
+  @include labcoat-font-size(medium);
 }
 
 .c-process__content {
@@ -75,10 +80,10 @@
       width: 33.33%;
       &:nth-of-type(odd) {
         clear: none;
-      }      
+      }
       &:nth-of-type(3n+1) {
         clear: left;
       }
     }
-  }  
+  }
 }
