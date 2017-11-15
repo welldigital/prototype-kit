@@ -23,6 +23,12 @@
   @include labcoat-button(default);
 }
 
+.c-btn--secondary {
+  border-width: 1px;
+  line-height: 48px; // Height - border width
+  @include labcoat-button(secondary);
+}
+
 .c-btn--arrow {
   background-position: 92% center;
   background-position: calc(100% - 18px) center;
@@ -47,7 +53,7 @@
   margin-left: 40px;
 }
 
-.c-btn--secondary {
+.c-btn--nav {
   border-width: 1px;
   border-radius: 2px;
   .c-btn__icon--open {
@@ -56,7 +62,7 @@
   .c-btn__icon--closed {
     @include labcoat-background-image('close-blue');
   }
-  @include labcoat-button(secondary);
+  @include labcoat-button(nav);
 }
 
 .c-btn__icon {

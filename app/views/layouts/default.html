@@ -48,7 +48,7 @@
                         </ul>
                     </div>
                 </div>
-                <button class="c-btn c-btn--toggle c-btn--secondary c-header__menu-button js-menu-button" aria-expanded="false" aria-controls="primary-navigation">
+                <button class="c-btn c-btn--toggle c-btn--nav c-header__menu-button js-menu-button" aria-expanded="false" aria-controls="primary-navigation">
                     <span class="c-btn__text js-menu-button-text" data-open-text="Close" data-closed-text="Menu">Menu</span>
                     <span class="c-btn__icon c-btn__icon--open"></span>
                     <span class="c-btn__icon c-btn__icon--closed"></span>
@@ -77,7 +77,7 @@
 
         {% endblock %}
 
-        <main>{% block main %}{% endblock %}</main>
+        <main id="main">{% block main %}{% endblock %}</main>
 
         {% block footer %}
 
