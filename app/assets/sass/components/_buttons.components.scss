@@ -16,7 +16,7 @@
   text-decoration: none;
   vertical-align: middle;
 	white-space: nowrap;
-  user-select: none;  
+  user-select: none;
   transition: $labcoat-global-transition;
   @include labcoat-font-size(small, $line-height: false);
   @include labcoat-font-family(medium);
@@ -25,10 +25,10 @@
 
 .c-btn--arrow {
   background-position: 92% center;
-  background-position: calc(100% - 18px) center;  
+  background-position: calc(100% - 18px) center;
   background-repeat: no-repeat;
   padding-right: 45px;
-  @include labcoat-background-image('chevron-white');  
+  @include labcoat-background-image('chevron-white');
 }
 
 .c-btn--block {
@@ -44,7 +44,10 @@
 
 .c-btn--header {
   float: right;
-  margin-left: 40px;
+  margin-left: 30px;
+  @include mq($from: medium){
+    margin-left: 40px;
+  }
 }
 
 .c-btn--secondary {
