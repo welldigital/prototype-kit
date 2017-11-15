@@ -36,7 +36,10 @@
 }
 
 .c-media__content {
-  margin-bottom: 54px; // 60px total
+  margin-bottom: 34px; // 60px total
+  p {
+    margin-bottom: 18px; // 35px total
+  }
 }
 
 .c-media__quote {
@@ -94,12 +97,9 @@
   }
   .c-media__content,
   .c-media__quote {
-      display: flex;
-      flex-direction: column;
-      flex: 1 0 auto;
-      p {
-        flex: 1 0 auto;
-      }
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
   }
 
   // Reverse column order
