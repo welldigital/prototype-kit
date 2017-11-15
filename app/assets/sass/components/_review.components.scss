@@ -1,0 +1,29 @@
+// ------------------------------------------------------
+//  Review
+// ------------------------------------------------------
+
+.c-review {
+  background-color: labcoat-theme-color(review-bg);
+  padding: 74px 40px 72px 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.c-review__quote {
+  margin: 0 auto;
+  max-width: 590px;
+  p {
+    color: labcoat-theme-color(review-quote);
+    @include labcoat-font-family(medium);
+    @include mq($from: medium) {
+      @include labcoat-font-size(medium);
+    }
+  }
+}
+
+.c-review__cite {
+  color: labcoat-theme-color(review-cite);
+  display: inline-block;
+  font-style: normal;
+  margin-top: 18px; // 35px total
+}
