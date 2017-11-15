@@ -34,6 +34,9 @@
   @include mq($from: medium) {
     display: inline;
     margin-bottom: 0;
+    margin-right: 30px;
+  }
+  @include mq($from: xlarge) {
     margin-right: 40px;
   }
 }
