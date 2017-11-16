@@ -32,8 +32,7 @@
   color: labcoat-theme-color(page-heading-badge-text);
   height: 160px;
   margin: 48px 0 52px 0; // 60px total
-  padding: 43px 10px 0 10px;
-
+  padding: 10px;
   text-align: center;
   width: 160px;
   @include labcoat-font-family(medium);
@@ -43,6 +42,14 @@
     top: 0;
     right: 0;
   }
+}
+
+// Flexbox supported
+.c-page-heading__badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .c-page-heading__badge__text {
