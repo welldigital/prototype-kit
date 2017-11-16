@@ -49,17 +49,13 @@
   background-color: labcoat-theme-color(process-number-bg);
   border-radius: 100%;
   color: labcoat-theme-color(process-number-color);
-  height: 50px;
-  line-height: 50px;
+  height: 80px;
+  line-height: 80px;
   margin-bottom: 34px; // 40px total
   text-align: center;
-  width: 50px;
-  @include mq($from: large) {
-    height: 80px;
-    line-height: 80px;
-    width: 80px;
-    @include labcoat-font-size(large, $line-height: false);
-  }
+  width: 80px;
+  @include labcoat-font-family(medium);
+  @include labcoat-font-size(large, $line-height: false);
 }
 
 .c-process__subtitle {
