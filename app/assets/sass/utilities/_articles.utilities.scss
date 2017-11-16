@@ -19,13 +19,13 @@
   }
 
   h2 {
-    @include labcoat-font-size(large); 
+    @include labcoat-font-size(large);
   }
 
   h3 {
-    @include labcoat-font-size(medium); 
-  }  
-  
+    @include labcoat-font-size(medium);
+  }
+
   p {
     margin-bottom: 22px; // 35px total
   }
@@ -40,7 +40,7 @@
       & h4,
       & h5,
       & h6,
-      & p.lead {      
+      & p.lead {
         margin-top: 65px; // 80px total
       }
     }
@@ -52,31 +52,32 @@
 
   ol,
   ul {
-    list-style-position: inside;
+    list-style-position: outside;
     margin: 22px 0; // 35px total
-    padding-left: 0;
-    & ol, 
+    padding-left: 20px;
+    & ol,
     & ul {
       margin-bottom: 0;
       padding-left: 40px;
     }
     ol {
       list-style-type: lower-roman;
-    }  
+    }
   }
-  
+
   li {
     margin-bottom: 8px; // 20px total
+    padding-left: 5px;
     ul, ol {
       margin-top: 8px; // 20px total
     }
-  }  
+  }
 
   blockquote {
     margin: 0;
     p {
       color: labcoat-theme-color(article-blockquote);
-      margin: 67px 0; // 80px total      
+      margin: 67px 0; // 80px total
       @include labcoat-font-family(medium);
       @include labcoat-font-size(medium);
       @include mq($from: large) {
@@ -84,6 +85,6 @@
         @include labcoat-font-size(large);
       }
     }
-  }  
+  }
 
 }
