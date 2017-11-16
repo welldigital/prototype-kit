@@ -3,12 +3,7 @@
 // ------------------------------------------------------
 
 .c-page-heading {
-  @include mq($from: large) {
-    max-width: 75%;
-  }
-  @include mq($from: xlarge) {
-    max-width: 66.66%;
-  }    
+  position: relative; // Badge uses absolute positioning
 }
 
 .c-page-heading__title {
@@ -16,11 +11,46 @@
   @include mq($from: medium) {
     @include labcoat-font-size(large);
   }
+  @include mq($from: large) {
+    max-width: 75%;
+  }
+  @include mq($from: xlarge) {
+    max-width: 66.66%;
+  }
 }
 
 .c-page-heading__title--xl {
-  @include labcoat-font-size(large);  
+  @include labcoat-font-size(large);
   @include mq($from: medium) {
     @include labcoat-font-size(xl);
   }
+}
+
+.c-page-heading__badge {
+  background-color: labcoat-theme-color(page-heading-badge-bg);
+  border-radius: 100%;
+  color: labcoat-theme-color(page-heading-badge-text);
+  height: 160px;
+  margin: 48px 0 52px 0; // 60px total
+  padding: 43px 10px 0 10px;
+
+  text-align: center;
+  width: 160px;
+  @include labcoat-font-family(medium);
+  @include mq($from: large) {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.c-page-heading__badge__text {
+  display: block;
+  line-height: 1;
+
+}
+
+.c-page-heading__badge__text--large {
+  @include labcoat-font-size(large);
 }

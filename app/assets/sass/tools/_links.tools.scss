@@ -3,7 +3,7 @@
 // ------------------------------------------------------
 
 @mixin labcoat-link-underline($color: false, $hover-color: false) {
-  
+
   @if $color == false {
     $color: labcoat-theme-color(default-link);
   } @else {
