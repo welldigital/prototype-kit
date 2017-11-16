@@ -4,10 +4,7 @@
 
 // Margin bottom
 .u-mb-base {
-  margin-bottom: 21px;
-  @include mq($from: medium) {
-    margin-bottom: 42px; // 100px total
-  }
+  margin-bottom: 42px; // 60px total
 }
 
 .u-mb-large {
@@ -33,10 +30,7 @@
 
 // Margin Top
 .u-mt-base {
-  margin-top: 16px; // 40px total
-  @include mq($from: medium) {
-    margin-top: 32px; // 40px total
-  }
+  margin-top: 32px; // 40px total
 }
 
 .u-mt-large {
