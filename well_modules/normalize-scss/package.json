@@ -1,0 +1,111 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "normalize-scss",
+        "scope": null,
+        "escapedName": "normalize-scss",
+        "name": "normalize-scss",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/paulsmith/Sites/well/prototype-kit"
+    ]
+  ],
+  "_from": "normalize-scss@latest",
+  "_id": "normalize-scss@7.0.0",
+  "_inCache": true,
+  "_location": "/normalize-scss",
+  "_nodeVersion": "7.9.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/normalize-scss-7.0.0.tgz_1495014538405_0.056291974149644375"
+  },
+  "_npmUser": {
+    "name": "johnalbin",
+    "email": "virtually.johnalbin@gmail.com"
+  },
+  "_npmVersion": "4.5.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "normalize-scss",
+    "scope": null,
+    "escapedName": "normalize-scss",
+    "name": "normalize-scss",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/normalize-scss/-/normalize-scss-7.0.0.tgz",
+  "_shasum": "92eaac6554cc376336c06682a0d6a2099bbb0889",
+  "_shrinkwrap": null,
+  "_spec": "normalize-scss",
+  "_where": "/Users/paulsmith/Sites/well/prototype-kit",
+  "author": {
+    "name": "John Albin Wilkins",
+    "email": "virtually.johnalbin@gmail.com",
+    "url": "http://john.albin.net/"
+  },
+  "bugs": {
+    "url": "https://github.com/JohnAlbin/normalize-scss/issues"
+  },
+  "dependencies": {},
+  "description": "This is the Sass version of Normalize.css, a collection of HTML element and attribute rulesets to normalize styles across all browsers. This port aims to use a light dusting of Sass to make Normalize even easier to integrate with your website.",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chroma-sass": "^1.2.3",
+    "eslint": "^3.8.0",
+    "eyeglass": "^1.1.2",
+    "mocha": "^3.1.2",
+    "sassy-test": "^3.0.0",
+    "typey": "^1.0.0"
+  },
+  "directories": {
+    "lib": "sass",
+    "test": "test"
+  },
+  "dist": {
+    "shasum": "92eaac6554cc376336c06682a0d6a2099bbb0889",
+    "tarball": "https://registry.npmjs.org/normalize-scss/-/normalize-scss-7.0.0.tgz"
+  },
+  "eyeglass": {
+    "sassDir": "sass",
+    "exports": false,
+    "name": "normalize",
+    "needs": "*"
+  },
+  "gitHead": "967536f3c9c4d82304767e2b6d4a17abc94f2b89",
+  "homepage": "https://github.com/JohnAlbin/normalize-scss",
+  "keywords": [
+    "eyeglass-module",
+    "sass",
+    "normalize"
+  ],
+  "license": "(MIT OR GPL-2.0)",
+  "main": "sass/_normalize.scss",
+  "maintainers": [
+    {
+      "name": "johnalbin",
+      "email": "virtually.johnalbin@gmail.com"
+    }
+  ],
+  "name": "normalize-scss",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JohnAlbin/normalize-scss.git"
+  },
+  "scripts": {
+    "posttest": "eslint test",
+    "test": "mocha",
+    "test-only": "mocha"
+  },
+  "style": "sass/_normalize.scss",
+  "version": "7.0.0"
+}
